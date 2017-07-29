@@ -1,0 +1,6691 @@
+.card {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 20px;
+    color: black;
+    background-color: white;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Merriweather Light'), local('Merriweather-Light'), url("_us-oxford-learners-dict-fonts-merriweather-v15-ZvcMqxEwPfh2qDWBPxn6nrMRY-O9-Xp5ppZeqcQcMH8.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Merriweather Light'), local('Merriweather-Light'), url("_us-oxford-learners-dict-fonts-merriweather-v15-ZvcMqxEwPfh2qDWBPxn6nhBw1OMgj265uIpoXHqn6zY.woff2") format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Merriweather Light'), local('Merriweather-Light'), url("_us-oxford-learners-dict-fonts-merriweather-v15-ZvcMqxEwPfh2qDWBPxn6nrsKtFnhOiVZh9MDlvO1Vys.woff2") format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Merriweather Light'), local('Merriweather-Light'), url("_us-oxford-learners-dict-fonts-merriweather-v15-ZvcMqxEwPfh2qDWBPxn6nkZRWJQ0UjzR2Uv6RollX-g.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Merriweather Bold'), local('Merriweather-Bold'), url("_us-oxford-learners-dict-fonts-merriweather-v15-ZvcMqxEwPfh2qDWBPxn6nlPfeBX0b-nUXzRxYCltCF0.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Merriweather Bold'), local('Merriweather-Bold'), url("_us-oxford-learners-dict-fonts-merriweather-v15-ZvcMqxEwPfh2qDWBPxn6noS3435hDhFFCA6hA-HcfZQ.woff2") format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Merriweather Bold'), local('Merriweather-Bold'), url("_us-oxford-learners-dict-fonts-merriweather-v15-ZvcMqxEwPfh2qDWBPxn6nkqWMeizceScn2Xpn1ZpsKI.woff2") format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Merriweather Bold'), local('Merriweather-Bold'), url("_us-oxford-learners-dict-fonts-merriweather-v15-ZvcMqxEwPfh2qDWBPxn6nshHwsiXhsDb0smKjAA7Bek.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Merriweather Light Italic'), local('Merriweather-LightItalic'), url("_us-oxford-learners-dict-fonts-merriweather-v15-EYh7Vl4ywhowqULgRdYwIOSpGJ4w-gNJD-QsPl9sQ7A.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Merriweather Light Italic'), local('Merriweather-LightItalic'), url("_us-oxford-learners-dict-fonts-merriweather-v15-EYh7Vl4ywhowqULgRdYwIN-zqiEjrF2cHwM7WvhO-L4.woff2") format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Merriweather Light Italic'), local('Merriweather-LightItalic'), url("_us-oxford-learners-dict-fonts-merriweather-v15-EYh7Vl4ywhowqULgRdYwIFPx9KgpCoczUSdnmwUGkhk.woff2") format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Merriweather Light Italic'), local('Merriweather-LightItalic'), url("_us-oxford-learners-dict-fonts-merriweather-v15-EYh7Vl4ywhowqULgRdYwIB0ue0Sk5cwvYx5tGiUAApw.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Merriweather Bold Italic'), local('Merriweather-BoldItalic'), url("_us-oxford-learners-dict-fonts-merriweather-v15-EYh7Vl4ywhowqULgRdYwIEaMaGruFzDoK1PiuIKwL-s.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Merriweather Bold Italic'), local('Merriweather-BoldItalic'), url("_us-oxford-learners-dict-fonts-merriweather-v15-EYh7Vl4ywhowqULgRdYwICOtRYHl1nVlqBVEsBD5gbM.woff2") format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Merriweather Bold Italic'), local('Merriweather-BoldItalic'), url("_us-oxford-learners-dict-fonts-merriweather-v15-EYh7Vl4ywhowqULgRdYwIFMxop41rUAeuGQqDMZDGyg.woff2") format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Merriweather Bold Italic'), local('Merriweather-BoldItalic'), url("_us-oxford-learners-dict-fonts-merriweather-v15-EYh7Vl4ywhowqULgRdYwIFh3o8VkC1exAYQ700cRowo.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url("_us-oxford-learners-dict-fonts-opensans-v14-K88pR3goAWT7BTt32Z01m4X0hVgzZQUfRDuZrPvH3D8.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url("_us-oxford-learners-dict-fonts-opensans-v14-RjgO7rYTmqiVp7vzi-Q5UYX0hVgzZQUfRDuZrPvH3D8.woff2") format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url("_us-oxford-learners-dict-fonts-opensans-v14-LWCjsQkB6EMdfHrEVqA1KYX0hVgzZQUfRDuZrPvH3D8.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url("_us-oxford-learners-dict-fonts-opensans-v14-xozscpT2726on7jbcb-pAoX0hVgzZQUfRDuZrPvH3D8.woff2") format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url("_us-oxford-learners-dict-fonts-opensans-v14-59ZRklaO5bWGqF5A9baEEYX0hVgzZQUfRDuZrPvH3D8.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url("_us-oxford-learners-dict-fonts-opensans-v14-u-WUoqrET9fUeobQW7jkRYX0hVgzZQUfRDuZrPvH3D8.woff2") format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url("_us-oxford-learners-dict-fonts-opensans-v14-cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj-0jans920.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url("_us-oxford-learners-dict-fonts-opensans-v14-MTP-ySUJH-bn48VBG8sNSg7aC6SjiAOpAWOKfJDfVRY.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url("_us-oxford-learners-dict-fonts-opensans-v14-MTP-ySUJH-bn48VBG8sNShdwxCXfZpKo5kWAx-74bHs.woff2") format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url("_us-oxford-learners-dict-fonts-opensans-v14-MTP-ySUJH-bn48VBG8sNSp6vnaPZw6nYDxM4SVEMFKg.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url("_us-oxford-learners-dict-fonts-opensans-v14-MTP-ySUJH-bn48VBG8sNSvy1-HTwRwgtl1cPga3Fy3Y.woff2") format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url("_us-oxford-learners-dict-fonts-opensans-v14-MTP-ySUJH-bn48VBG8sNSvgrLsWo7Jk1KvZser0olKY.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url("_us-oxford-learners-dict-fonts-opensans-v14-MTP-ySUJH-bn48VBG8sNSojoYw3YTyktCCer-ilOlhE.woff2") format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url("_us-oxford-learners-dict-fonts-opensans-v14-MTP-ySUJH-bn48VBG8sNShampu5-7CjHW5spxoeN3Vs.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url("_us-oxford-learners-dict-fonts-opensans-v14-xjAJXh38I15wypJXxuGMBvZraR2Tg8w2lzm7kLNL0-w.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url("_us-oxford-learners-dict-fonts-opensans-v14-xjAJXh38I15wypJXxuGMBl4sYYdJg5dU2qzJEVSuta0.woff2") format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url("_us-oxford-learners-dict-fonts-opensans-v14-xjAJXh38I15wypJXxuGMBlBW26QxpSj--ZKm-xT4hWw.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url("_us-oxford-learners-dict-fonts-opensans-v14-xjAJXh38I15wypJXxuGMBgt-Rm691LTebKfY2ZkKSmI.woff2") format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url("_us-oxford-learners-dict-fonts-opensans-v14-xjAJXh38I15wypJXxuGMBtDiNsR5a-9Oe-Ivpu8XWlY.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url("_us-oxford-learners-dict-fonts-opensans-v14-xjAJXh38I15wypJXxuGMBqE8kM4xWR1-1bYURRojRGc.woff2") format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url("_us-oxford-learners-dict-fonts-opensans-v14-xjAJXh38I15wypJXxuGMBogp9Q8gbYrhqGlRav-IXfk.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Open Sans SemiBold Italic'), local('OpenSans-SemiBoldItalic'), url("_us-oxford-learners-dict-fonts-opensans-v14-PRmiXeptR36kaC0GEAetxjBFCZ8rkaaoOvHyaB4p1V8.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Open Sans SemiBold Italic'), local('OpenSans-SemiBoldItalic'), url("_us-oxford-learners-dict-fonts-opensans-v14-PRmiXeptR36kaC0GEAetxs2Ua5FNUHV5nolPhplIfzg.woff2") format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Open Sans SemiBold Italic'), local('OpenSans-SemiBoldItalic'), url("_us-oxford-learners-dict-fonts-opensans-v14-PRmiXeptR36kaC0GEAetxn1XrJsKtwhNaJmMXegB1eg.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Open Sans SemiBold Italic'), local('OpenSans-SemiBoldItalic'), url("_us-oxford-learners-dict-fonts-opensans-v14-PRmiXeptR36kaC0GEAetxtDawAUxQv-nqIa2sHgh1E4.woff2") format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Open Sans SemiBold Italic'), local('OpenSans-SemiBoldItalic'), url("_us-oxford-learners-dict-fonts-opensans-v14-PRmiXeptR36kaC0GEAetxo6uqQeO3rRcuZb4avK7jaw.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Open Sans SemiBold Italic'), local('OpenSans-SemiBoldItalic'), url("_us-oxford-learners-dict-fonts-opensans-v14-PRmiXeptR36kaC0GEAetxkWd5At5A4dPjoTcH8-WMxA.woff2") format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Open Sans SemiBold Italic'), local('OpenSans-SemiBoldItalic'), url("_us-oxford-learners-dict-fonts-opensans-v14-PRmiXeptR36kaC0GEAetxsiAiQ-a33snTsJhwZvMEaI.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+.icon-tick:before {
+    content: "\e616";
+}
+
+#search-btn:before {
+    content: "\e60b";
+}
+
+#arrow_select:before {
+    content: "\e615";
+}
+
+/* high level styles */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    /*margin: 0 3px 0 3px;*/
+    /*padding: 0;*/
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.clear_fix, #search-form, /*.wl-table tr,*/
+.bar-slider {
+    *zoom: 1;
+}
+
+.clear_fix:before, #search-form:before, /*.wl-table tr:before,*/
+.bar-slider:before, .clear_fix:after, #search-form:after, /*.wl-table tr:after,*/
+.bar-slider:after {
+    content: "";
+    display: table;
+}
+
+.clear_fix:after, #search-form:after, /*.wl-table tr:after,*/
+.bar-slider:after {
+    clear: both;
+}
+
+html {
+    overflow-y: scroll;
+    min-height: 100%;
+}
+
+body {
+    min-height: 100%;
+    font-size: 93.75%;
+    line-height: 1.6em;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    color: #333333;
+    background-color: #f2f2f2;
+    min-width: 320px;
+    -webkit-text-size-adjust: none; /* stops font scaling on iPhone rotation */
+}
+
+h1 {
+    font-size: 26px;
+    line-height: 1em;
+    margin: 0 0 14px;
+    color: #0d3880;
+}
+
+/*#main_column > h1 {
+    margin-top: 7px;
+}*/
+
+h1.h, h1.my-wordlist-titles, #search-results h1,
+.nearest-results {
+    color: #0d3880;
+    display: block;
+    font-family: 'Merriweather', Georgia, serif;
+    margin-right: 10px;
+    margin-top: 12px;
+    line-height: 1.2em;
+}
+
+h1 + h2 {
+    margin-top: 12px;
+}
+
+h2 {
+    font-size: 31px;
+    line-height: 42px;
+    margin: 0;
+    color: #0d3880;
+}
+
+h3 {
+    font-size: 21px;
+    font-weight: normal;
+    line-height: 25px;
+    padding: 7px 0;
+    margin: 14px 0 7px;
+    color: #282828;
+}
+
+h4 {
+    font-size: 17px;
+    line-height: 19px;
+    font-weight: bold;
+    margin: 0 0 7px;
+    color: #282828;
+}
+
+h5 {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: bold;
+    margin: 7px 0 0;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+h6 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 4px 0 3px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-rendering: optimizeLegibility;
+}
+
+.clear-both {
+    clear: both;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+ol li {
+    margin-bottom: 12px;
+}
+
+ol li:last-child {
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #004aac;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+p {
+    margin-bottom: 7px;
+}
+
+p.zero {
+    margin-bottom: 0;
+}
+
+i {
+    font-style: italic;
+}
+
+em {
+    font-weight: bold;
+}
+
+strong {
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table td {
+    vertical-align: middle;
+    font-weight: normal;
+}
+
+ul {
+    padding: 0;
+}
+
+ul.disc {
+    margin-left: 21px;
+    margin-bottom: 14px;
+    max-width: 700px;
+    padding: 0;
+}
+
+ul.disc li {
+    list-style-type: disc;
+}
+
+/*ul.menu li,*/
+ul.paging_links li {
+    display: table-cell;
+    text-align: center;
+}
+
+pos {
+    color: #555555;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+/* -end- high level styles */
+
+/* authorizations */
+.hide_all {
+    display: none;
+}
+
+.show_premium {
+    display: none !important;
+}
+
+.premium .show_premium {
+    display: block !important;
+}
+
+/* -end- authorizations */
+
+/* OUP cookie */
+#cookieLaw {
+    background-color: #323232;
+    color: #BBC;
+    padding: 8px 20px;
+}
+
+#cookieLaw a {
+    color: #FFF;
+    font-weight: bold;
+}
+
+#cookieClose {
+    float: right;
+}
+
+/* -end- OUP cookie */
+
+/* survey */
+
+.survey {
+    background: #76000a;
+    padding: 8px 20px;
+    color: #FFE4E4;
+}
+
+.survey .responsive_container {
+    clear: none;
+    min-width: 0 !important;
+}
+
+.survey a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.survey .surveyClose {
+    float: right;
+}
+
+/* end survey */
+
+/* header bar */
+.top {
+    background: #00123C;
+    min-height: 5px;
+}
+
+.topMarginBottom {
+    margin-bottom: 0 !important;
+}
+
+.nav {
+    position: relative;
+    z-index: 10;
+}
+
+.nav a,
+.nav li input {
+    display: inline-block;
+    padding: 8px 13px;
+    line-height: 20px;
+    color: white;
+    font-size: 11pt;
+    cursor: pointer;
+}
+
+.menu a.top-toolbar-off {
+    color: grey;
+}
+
+.nav a:hover {
+    text-decoration: none;
+}
+
+.nav ul.menu li a:hover:not(.top-toolbar-active) {
+    background-color: #004aac;
+}
+
+.menu {
+    display: table;
+    vertical-align: middle;
+    margin: 0;
+    float: left;
+    padding: 0;
+}
+
+.menu li {
+    display: table-cell;
+    text-align: center;
+}
+
+.main_nav .menu span, .main_nav .menu span a, .menu .is-selected a, .menu a.top-toolbar-active {
+    display: block;
+    padding: 0 15px;
+    color: #00123c;
+}
+
+.main_nav .menu span, .menu a.top-toolbar-active {
+    background-color: #f2f2f2;
+    border-radius: 14px 14px 0 0;
+    padding: 4px 15px 8px;
+    border-right: 4px solid #00123c;
+    border-left: 4px solid #00123c;
+    border-top: 4px solid #00123c;
+    text-decoration: none;
+}
+
+.nav .login-circle {
+    margin: 0;
+    float: right;
+    background: url("_us-oxford-learners-dict-images-header-login-bg.png") 0 -50px no-repeat;
+    height: 80px;
+    width: 120px;
+    margin-bottom: -50px;
+    padding-top: 0;
+    text-align: center;
+}
+
+.nav .login-circle a {
+    white-space: normal;
+    line-height: 18px;
+}
+
+.nav .login-circle:hover {
+    background-position: 0 -45px;
+    padding-top: 5px;
+}
+
+.nav .login-circle ul {
+    padding: 0;
+}
+
+.nav .login-circle li:hover {
+    background-color: transparent;
+}
+
+.nav .logout {
+    float: right;
+}
+
+.nav .logout a, .nav .logout span {
+    display: inline-block;
+}
+
+.nav .logout a:not(.top-toolbar-active):hover,
+.nav .logout li input:hover {
+    background-color: #8f0610;
+}
+
+.main_nav {
+    -webkit-transition: max-height 1s ease;
+    -moz-transition: max-height 1s ease;
+    -o-transition: max-height 1s ease;
+    transition: max-height 1s ease;
+}
+
+.menu_button {
+    position: absolute;
+    bottom: -36px;
+    right: 30px;
+    height: 36px;
+    width: 36px;
+    background: #00123C url("_us-oxford-learners-dict-images-header-menu-bars.png") no-repeat center center;
+    background-size: 60%;
+    border-radius: 0 0 10px 10px;
+}
+
+.menu_button:hover {
+    cursor: pointer;
+}
+
+.nav .login-getpremium li {
+    padding: 0 10px;
+}
+
+.menu.logout li input {
+    font-family: inherit;
+    background: none;
+    border: none;
+    border-radius: 0px;
+    margin: 0;
+    height: auto;
+    outline: none;
+    vertical-align: baseline;
+}
+
+.menu.logout li input::-moz-focus-inner {
+    border: 0;
+}
+
+/* -end- header bar */
+
+/* main logo */
+.old-logo-title {
+    background: url("_us-oxford-learners-dict-images-header-OLD-Logo.png") no-repeat;
+    background-size: 100%;
+    width: 460px;
+    height: 82px;
+    display: block;
+    float: left;
+}
+
+.homepage .old-logo-title {
+    width: 616px;
+    height: 108px;
+}
+
+/* end main logo */
+
+/* search bar */
+#search-form {
+    margin-top: 4px;
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 2px;
+    border: 1px solid #999999;
+    position: relative;
+}
+
+.mainsearch {
+    width: 728px;
+}
+
+.mainsearch.responsive_row {
+    margin-bottom: 11px;
+}
+
+/* input */
+.searchfield {
+    width: 67%;
+    float: left;
+}
+
+.searchfield_input {
+    font-size: 15px;
+    width: 95%;
+    outline: none;
+    border: none;
+    height: 30px;
+}
+
+/*Chrome*/
+.searchfield_input::-webkit-input-placeholder {
+    color: #757575;
+}
+
+/*Mozilla*/
+.searchfield_input::-moz-placeholder {
+    color: #757575;
+}
+
+/*IE*/
+.searchfield_input:-ms-input-placeholder {
+    color: #757575;
+}
+
+/* dictionary selector states */
+.mainsearch .dictionarySelector {
+    float: left;
+    width: 27%;
+    padding-bottom: 22px;
+    margin-bottom: -22px;
+}
+
+#arrow_select {
+    vertical-align: middle;
+    font-size: .4em;
+    color: white;
+}
+
+.mainsearch .dictionarySelector #select_div {
+    padding: 8px 10px;
+    background-color: #4577bf;
+    border-radius: 20px;
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 14px;
+}
+
+.mainsearch .dictionarySelector option {
+    color: #333333;
+}
+
+.mainsearch .dictionarySelector:hover .csm,
+.csm:hover {
+    display: block;
+}
+
+.mainsearch .dictionarySelector #select_div div {
+    min-width: 160px;
+    display: inline-block;
+    padding-right: 3px;
+}
+
+.csm {
+    top: 46px;
+    background: #fff;
+    border: 1px solid #999999;
+    padding: 8px 0;
+    font-size: 14px;
+    line-height: 1.65em;
+    position: absolute;
+    display: none;
+    z-index: 1;
+}
+
+.csm .notch1 {
+    position: absolute;
+    top: -11px;
+    left: 21px;
+    border-top: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #999999;
+    width: 0;
+    height: 0;
+}
+
+.csm .notch2 {
+    position: absolute;
+    top: -10px;
+    left: 21px;
+    border-top: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    width: 0;
+    height: 0;
+}
+
+.locked {
+    background: url("_us-oxford-learners-dict-images-restricted.svg") no-repeat;
+    margin-left: 7px;
+    background-size: contain;
+    display: inline-block;
+    width: 7px;
+    height: 11px;
+}
+
+.csm a {
+    padding: 0 12px;
+    display: block;
+    white-space: nowrap;
+    color: #000;
+}
+
+.csm a:hover {
+    background-color: #efefef;
+    text-decoration: none;
+}
+
+.csm a .icon-tick {
+    color: #aaa;
+    margin-left: 10px;
+    font-size: 0.7em;
+    vertical-align: baseline;
+}
+
+.mainsearch .dictionarySelector select {
+    display: none;
+}
+
+/* search button states */
+#search-btn {
+    float: right;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    line-height: 27px;
+    background: #4577bf;
+    color: white;
+    text-align: center;
+    width: 31px;
+}
+
+#search-btn input {
+    margin-top: -50px;
+    height: 30px;
+    width: 31px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+#arrowClose {
+    background: white;
+    margin-right: 1px;
+    padding-top: 4px !important;
+    border-radius: 4px;
+}
+
+.oup_icons {
+    vertical-align: text-bottom;
+    display: inline-block !important;
+    font-family: 'oup-icons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    color: #777;
+    line-height: 1;
+    font-size: 16px;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#keyboard_icon:hover {
+    text-decoration: none;
+}
+
+#keyboard_icon:before {
+    content: "\e600";
+}
+
+#keyboard_letters {
+    display: none;
+    background: #ddd;
+    position: absolute;
+    z-index: 999;
+    height: 26px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+    white-space: nowrap;
+    font-size: 16px;
+    top: -29px;
+    min-width: 502px;
+}
+
+#keyboard_letters a {
+    color: #444;
+    text-decoration: none;
+    padding: 5px 2px 2px 2px;
+}
+
+#arrowKeyboard:before {
+    content: "\e614";
+}
+
+#arrowClose {
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    padding: 2px 2px 5px 2px !important;
+    margin-top: 1px;
+}
+
+#arrowClose:before {
+    content: "\e609";
+}
+
+/* -end- search bar */
+
+/* premium menu bar */
+.grey-grad, .ui-grad dt, .pron_row .btn, .pron_row input[type='submit'], .topic-mobile ul ul li:first-child, .wl-nav {
+    box-shadow: 0 50px 50px -30px white inset;
+    background-color: #cccccc;
+    border: 1px solid #cccccc;
+}
+
+.grey-grad-inverse {
+    box-shadow: 0 -50px 50px -30px white inset;
+    background-color: #cccccc;
+}
+
+.premium-navigation {
+    overflow: hidden;
+    width: 728px;
+}
+
+.premium-navigation a {
+    color: white;
+    font-weight: normal;
+    padding: 8px 13px;
+    display: block;
+}
+
+.premium-navigation span {
+    margin: 0 21px;
+    padding: 0;
+}
+
+.premium-navigation ul {
+    background-color: #00123C;
+    border-radius: 30px;
+    padding: 0;
+    display: table;
+    overflow: hidden;
+}
+
+.premium-navigation li:first-child {
+    padding: 0 14px 0 16px;
+    border: 1px solid #00123c;
+    background-color: #f2f2f2;
+    border-radius: 30px 0 0 30px;
+    border-right-width: 0px;
+    color: #00123c;
+}
+
+.premium-navigation li:first-child a:not(.top-toolbar-active):hover {
+    border-radius: 18px 0 0 18px;
+}
+
+.premium-navigation li:last-child a.top-toolbar-active {
+    border-radius: 0 20px 20px 0;
+}
+
+.premium-navigation li a:not(.top-toolbar-active):hover {
+    background-color: #004aac;
+    color: white;
+    text-decoration: none;
+}
+
+.premium-navigation .menu a.top-toolbar-active {
+    border-radius: 0px;
+    border-width: 3px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* -end- premium menu bar */
+
+/* premium menu dropdown */
+.prem-nav-select {
+    width: 100%;
+    overflow: hidden;
+    padding: 6px;
+    color: #00123c;
+    border: 1px solid rgba(0, 18, 60, 0.3);
+    border-radius: 18px;
+    position: relative;
+}
+
+.prem-nav-select {
+    width: 100%;
+    font-size: 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    border-radius: 18px;
+    border-width: 0px;
+    background: #f2f2f2 url("_us-oxford-learners-dict-images-header-icon-select-arrow-circle.png") 0px 0px no-repeat;
+    margin: 0;
+    padding: 0 0 0 28px;
+    color: #00123c;
+    line-height: 20px;
+}
+
+.prem-nav-select:hover {
+    background-color: #00123c;
+    color: #ffffff;
+}
+
+.prem-nav-select option {
+    color: black;
+    background-color: white;
+}
+
+/* -end- premium menu dropdown */
+
+/* footer */
+.oup-footer {
+    font-size: 12px;
+    padding: 24px 24px 12px;
+    margin-bottom: 0px !important;
+    background-color: #00123c;
+}
+
+.oup-footer a {
+    font-weight: normal;
+    color: white;
+}
+
+.oup-footer ul {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.oup-footer li {
+    display: inline;
+    padding: 0 5px;
+    white-space: nowrap;
+}
+
+.oup-footer li:last-child {
+    border: none;
+}
+
+.oup-footer li a {
+    padding: 2px 3px;
+}
+
+.oup-footer .btn {
+    margin-bottom: 0;
+}
+
+.oup-logo {
+    display: inline-block;
+    float: left;
+    width: 135px;
+    height: auto;
+    padding: 12px 0;
+    margin: 0 18px 0 0;
+}
+
+.slt-logo {
+    float: right;
+    height: 24px;
+    width: 160px;
+    margin: 4px 0 0 0;
+}
+
+.oup-footer p {
+    color: white;
+}
+
+.oup-footer p.copyright {
+    clear: left;
+    float: left;
+    display: inline-block;
+    padding: 0 0 0 8px;
+    margin: 3px 0 6px;
+}
+
+.versionSelector {
+    float: right;
+    margin: 6px 0 0 0;
+    padding-bottom: 10px;
+}
+
+div.social-facebook, div.social-twitter {
+    border-color: rgba(255, 255, 255, 0.5);
+    background: rgba(0, 0, 0, 0.1);
+    background: transparent;
+    width: 157px;
+}
+
+div.social-facebook a, div.social-twitter a {
+    color: white;
+}
+
+div.social-facebook a:before {
+    background-image: url("_us-oxford-learners-dict-images-footer-btn-facebook.png");
+    background-position: -1px bottom;
+    background-size: 100%;
+}
+
+div.social-twitter a:before {
+    background-image: url("_us-oxford-learners-dict-images-footer-btn-twitter.png");
+    background-position: -1px bottom;
+    background-size: 100%;
+}
+
+/* -end- footer */
+
+/* buttons */
+.btn, input[type='submit'], input[type='button']#skipDef, input[type='button']#submitQuit {
+    display: inline-block;
+    width: auto;
+    height: 30px;
+    line-height: 26px;
+    margin: 0 6px 6px 0;
+    background: #ffffff;
+    border: 2px solid #4577bf;
+    border-radius: 15px;
+    -webkit-appearance: none;
+    text-align: center;
+    position: relative;
+    vertical-align: middle;
+}
+
+.btn > a, .btn > input {
+    display: table-cell;
+    padding: 0 12px;
+    color: #4577bf;
+    height: 26px;
+    white-space: nowrap;
+    font-weight: normal;
+}
+
+input[type='submit'], input[type='button']#skipDef, input[type='button']#submitQuit {
+    font-size: 15px;
+    padding: 0 12px;
+    color: #4577bf;
+    white-space: nowrap;
+}
+
+.btn:not(.inactive):hover {
+    background: #4577bf;
+    border: 2px solid #4577bf;
+}
+
+input[type='submit']:hover, input[type='button']#skipDef:hover, input[type='button']#submitQuit:hover {
+    color: white;
+    background-color: #4577bf;
+}
+
+.btn:not(.inactive):hover a {
+    color: white;
+}
+
+.btn:not(.inactive):hover a:before {
+    background-position: -1px bottom;
+}
+
+.btn:active {
+    background-color: #07255e;
+    border-color: #07255e;
+}
+
+.btn > a:hover {
+    text-decoration: none;
+}
+
+.btn.icon-only {
+    width: 30px;
+}
+
+.btn.icon-left a,
+input.icon-left[type='submit'] a,
+.btn.icon-left-colapse a,
+input.icon-left-colapse[type='submit'] a {
+    padding-left: 30px;
+    position: relative;
+}
+
+.btn.icon-left a:before,
+input.icon-left[type='submit'] a:before,
+.btn.icon-left-colapse a:before,
+input.icon-left-colapse[type='submit'] a:before {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 26px;
+    margin-left: -28px;
+}
+
+.btn.inactive, input.inactive[type='submit'] {
+    background: grey;
+    pointer-events: none;
+}
+
+.btn.inactive a, input.inactive[type='submit'] a {
+    color: #333333;
+}
+
+.btn.record, .btn.play {
+    margin-top: -8px;
+}
+
+.btn.record a:before, input.record[type='submit'] a:before {
+    background-image: url("_us-oxford-learners-dict-images-pron-prac-btn-record.png");
+    background-size: 100%;
+}
+
+.btn.play a:before, input.play[type='submit'] a:before {
+    background-image: url("_us-oxford-learners-dict-images-pron-prac-btn-play.png");
+    background-size: 100%;
+}
+
+.btn.btn-premium {
+    background-color: #8f0610;
+    border-color: #8f0610;
+    margin-top: 10px;
+}
+
+.btn.btn-premium a {
+    color: #ffffff;
+}
+
+.btn.btn-premium:not(.inactive):hover {
+    background: #c00815;
+    border-color: #c00815;
+}
+
+/* end buttons */
+
+/* audio buttons */
+.wordlist-oxford3000 .sound,
+.webtop-g .sound,
+.top-g .sound,
+.ei-g .sound,
+.if-g .sound,
+.pron__wrap .sound {
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.wordlist-oxford3000 .pron-uk,
+.webtop-g .pron-uk,
+.top-g .pron-uk,
+.ei-g .pron-uk,
+.if-g .pron-uk,
+.pron__wrap .pron-uk {
+    background-image: url("_us-oxford-learners-dict-images-documents-icon-audio-bre.png");
+    background-repeat: no-repeat;
+    background-position: left top !important;
+    background-size: 100%;
+    width: 24px;
+    height: 24px;
+}
+
+.wordlist-oxford3000 .pron-uk:hover,
+.webtop-g .pron-uk:hover,
+.top-g .pron-uk:hover,
+.ei-g .pron-uk:hover,
+.if-g .pron-uk:hover,
+.pron__wrap .pron-uk:hover {
+    background-image: url("_us-oxford-learners-dict-images-documents-icon-audio-bre.png");
+    background-repeat: no-repeat;
+    background-position: left bottom !important;
+}
+
+.wordlist-oxford3000 .pron-us:hover,
+.webtop-g .pron-us:hover,
+.top-g .pron-us:hover,
+.ei-g .pron-us:hover,
+.if-g .pron-us:hover,
+.pron__wrap .pron-us:hover,
+.labelsAbout .pron-usonly:hover,
+.wordlist-oxford3000 .pron-usonly:hover,
+.webtop-g .pron-usonly:hover,
+.top-g .pron-usonly:hover,
+.ei-g .pron-usonly:hover,
+.if-g .pron-usonly:hover,
+.pron__wrap .pron-usonly:hover {
+    background-image: url("_us-oxford-learners-dict-images-documents-icon-audio-name.png");
+    background-repeat: no-repeat;
+    background-position: left bottom !important;
+}
+
+.wordlist-oxford3000 .pron-us,
+.webtop-g .pron-us,
+.top-g .pron-us,
+.ei-g .pron-us,
+.if-g .pron-us,
+.pron__wrap .pron-us,
+.labelsAbout .pron-usonly,
+.wordlist-oxford3000 .pron-usonly,
+.webtop-g .pron-usonly,
+.top-g .pron-usonly,
+.ei-g .pron-usonly,
+.if-g .pron-usonly,
+.pron__wrap .pron-usonly {
+    background-image: url("_us-oxford-learners-dict-images-documents-icon-audio-name.png");
+    background-repeat: no-repeat;
+    background-position: left top !important;
+    background-size: 100%;
+    width: 24px;
+    height: 24px;
+}
+
+/* -end- audio buttons */
+
+/* go to top arrow */
+a.go-to-top {
+    background: url("_us-oxford-learners-dict-images-go-to-top.png") no-repeat center center;
+    background-size: 100%;
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    text-indent: -9999px;
+    font-size: 0;
+    cursor: pointer;
+    outline: 0;
+}
+
+/* -end- go to top arrow */
+
+/* tint panels */
+[class*="tint_panel"] {
+    padding: 7px 13px;
+    border-radius: 7px;
+}
+
+[class*="tint_panel"] h3 {
+    margin-bottom: 12px !important;
+}
+
+.tint_panel, .tint_panel_basic, .tint_panel_warning {
+    background-color: #efefef;
+    border: 1px solid #ddd;
+    max-width: 700px;
+}
+
+.tint_panel_basic {
+    background-color: #e0f2fd;
+    border-color: #b0defa;
+    border: none;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-bottom: 12px;
+}
+
+.tint_blue {
+    background-color: #ecf5ff;
+    border: 1px solid #ecf5ff;
+}
+
+[class*="tint_panel_inner"] {
+    margin: 12px 0 12px;
+}
+
+.tint_panel_inner_light {
+    background-color: white;
+    border-color: white;
+    border-radius: 10px;
+}
+
+.tint_panel_inner_light > ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+[class*="tint_panel"] > h2, [class*="tint_panel"] > h3, [class*="tint_panel"] > h4 {
+    margin-top: 0px;
+}
+
+.right-colum h3, .tint_panel h3 {
+    border-bottom: 1px solid #282828;
+}
+
+#rightcolumn h4, .tint_panel h4 {
+    padding: 0 0 8px;
+    border-bottom: 1px solid #787878;
+    margin-top: 7px;
+}
+
+/* -end- tint panels */
+
+/* table of content */
+#rightcolumn .toc {
+    position: relative;
+    overflow: hidden;
+}
+
+#rightcolumn .toc_header {
+    box-shadow: 0 50px 50px -30px white inset;
+    background-color: #cccccc;
+    border: 1px solid #cccccc;
+    border-radius: 8px 8px 0 0;
+    border-bottom: none;
+}
+
+#rightcolumn .toc_header h4 {
+    padding-left: 25px;
+    margin: 7px 0 0 0;
+    border-bottom: none;
+}
+
+#rightcolumn .toc_content {
+    border: 1px solid #cccccc;
+}
+
+#rightcolumn .data-fold .toc_content {
+    display: none;
+}
+
+#rightcolumn .toc_content > a {
+    padding-left: 7px;
+}
+
+/* -end- table of content */
+
+/* hyperlinks */
+p.links {
+    margin-top: -10px;
+    margin-bottom: 4px;
+}
+
+.link-right, .link-left, .link-down, .link-pdf {
+    margin-right: 7px;
+    /*display: inline-block;*/
+    font-weight: normal;
+    display: none;
+}
+
+.link-right:after, .link-left:before, .link-down:before, .link-pdf:before {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    content: "";
+    width: 8px;
+    height: 15px;
+    margin-left: 5px;
+    background: url("_us-oxford-learners-dict-images-documents-link-right.png") no-repeat center center;
+    background-size: 100%;
+}
+
+.link-left:before, .link-down:before, .link-pdf:before {
+    background: url("_us-oxford-learners-dict-images-documents-link-left.png") no-repeat center center;
+    margin-right: 5px;
+    margin-left: 0;
+    width: 8px;
+    height: 15px;
+    background-size: 100%;
+}
+
+.link-pdf:before {
+    background: url("_us-oxford-learners-dict-images-documents-icon-pdf.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+    height: 16px;
+    margin-right: 6px;
+    margin-top: 2px;
+    width: 16px;
+}
+
+.about-link {
+    margin-bottom: 14px;
+}
+
+/* -end- hyperlinks */
+
+/*------------------------------------*\
+    HOMEPAGE
+\*------------------------------------*/
+
+/* home page boxes */
+.box {
+    display: table-cell;
+    padding: 1.2em;
+    box-shadow: 0 1px 5px grey;
+    margin-right: 1.2em;
+    width: 296px;
+    background: url("_us-oxford-learners-dict-images-home-old-ball.png") no-repeat 15px 15px white;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.box h2 {
+    font-size: 21px;
+    line-height: 30px;
+    padding-left: 42px;
+    margin: 0 0 16px;
+    font-family: 'Merriweather', Georgia, sans-serif;
+    font-weight: normal;
+    color: #0d3880;
+}
+
+.box h3 {
+    font-size: 18px;
+    padding-left: 42px;
+    color: #14387f;
+    margin-top: -12px;
+    font-weight: normal;
+}
+
+.box p {
+    line-height: 21px;
+    margin-bottom: 7px;
+}
+
+.box .box-space {
+    margin-right: 120px;
+}
+
+.box .box-image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.box-padding {
+    display: table-cell;
+    width: 1.2em;
+}
+
+.row {
+    display: table;
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.dynamicPanelWarning {
+    color: red;
+}
+
+.dynamicPanelWarning item > *:not(:last-child):after {
+    content: " - ";
+}
+
+.dynamicPanelWarning item title {
+    display: inline-block;
+}
+
+/* -end- homepage boxes */
+
+/* word of the day box */
+#wotd-box {
+    background-color: #ecf5ff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    margin-top: 1px;
+}
+
+#dayhead {
+    position: relative;
+    border-bottom: 1px solid white;
+    background-color: #4577BF;
+}
+
+#dayhead #boxtitle {
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+    line-height: 35px;
+}
+
+.rss-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 35px;
+    height: 35px;
+    background: url("_us-oxford-learners-dict-images-icon-rss.png") no-repeat scroll 0 top rgba(0, 0, 0, 0);
+    background-size: 100%;
+}
+
+.rss-icon:hover {
+    background: url("_us-oxford-learners-dict-images-icon-rss.png") no-repeat scroll 0 bottom white;
+    background-size: 100%;
+}
+
+#daybox {
+    padding: 7px 14px;
+    text-align: center;
+}
+
+#daybox .h {
+    color: #07255e;
+    text-align: center;
+    display: block;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    font-weight: bold;
+    display: block;
+    font-size: 24px;
+}
+
+#daybox .d {
+    color: #07255e;
+    display: block;
+}
+
+#daybox .btn {
+    margin-top: 12px;
+}
+
+/* -end- word of the day box */
+
+/* recent searches */
+.recentsearches, .quickLinks {
+    width: 100%;
+    border-collapse: collapse;
+    margin-left: 0px;
+    text-align: left !important;
+    background-color: #ecf5ff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.recentsearches td,
+.recentsearches th,
+.quickLinks td,
+.quickLinks th {
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+.recentsearches td,
+.quickLinks td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+.recentsearches a,
+.quickLinks a {
+    /*margin: 0 0 0 10px;*/
+}
+
+.recentsearches tr th,
+.quickLinks tr th {
+    color: white;
+    text-align: center;
+    background-color: #4577BF;
+    line-height: 2.3333333333333em;
+    border-bottom: 1px solid white;
+}
+
+.recentsearches tr td,
+.quickLinks tr td {
+    line-height: 2em;
+    padding: 0;
+}
+
+.recentsearches tr,
+.quickLinks tr {
+    border-bottom: 1px solid white;
+}
+
+.recentsearches tr:last-child,
+.quickLinks tr:last-child {
+    border: none;
+}
+
+.recentsearches tr td div,
+.quickLinks tr td div {
+
+    padding: 7px 14px;
+    line-height: 21px;
+}
+
+.recentsearches tr td a,
+.quickLinks tr td a {
+    color: #07255e;
+}
+
+.recentsearches tr td a .pos,
+.quickLinks tr td a .pos {
+    color: #555555;
+    font-weight: normal;
+    margin-left: 0;
+    font-size: 0.9em;
+}
+
+.quickLinks tr th {
+    background-color: #07255e;
+}
+
+/* -end- recent searches */
+/* quick links */
+.responsive_quicklinks .recentsearches a {
+    margin: 0;
+}
+
+/* -end- quick links */
+
+/*------------------------------------*\
+    GENERAL TEXT
+    (USED ON WORDLIST HOMEPAGE AND ABOUT PAGE)
+\*------------------------------------*/
+
+#generaltext {
+    font-size: 15px;
+    max-width: 750px;
+}
+
+#generaltext h2 {
+    color: #282828;
+    margin: 16px 0 6px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+#generaltext p {
+    margin-bottom: 7px;
+}
+
+#generaltext ul {
+    padding-left: 0;
+}
+
+.h-g + #generaltext {
+    margin-top: 0.5em;
+}
+
+#generaltext .generaltext-list {
+    padding-left: 20px;
+    list-style-type: disc;
+    margin-bottom: 7px;
+}
+
+#generaltext .oxford3000-blue, #generaltext .academic-blue {
+    margin-top: 0;
+}
+
+.generaltext-table tr {
+    border-bottom: 1px solid rgba(0, 18, 60, 0.2);
+}
+
+#firsttext {
+    max-width: 750px;
+    margin-bottom: 7px;
+}
+
+.info-enlarge {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.info-enlarge #ox-enlarge {
+    float: none;
+    display: table-cell;
+    height: auto;
+    width: 300px;
+    clear: none;
+}
+
+.info-enlarge #ox-enlarge a {
+    margin: 0;
+}
+
+.info-enlarge #ox-enlarge img {
+    width: 100%;
+}
+
+.info-enlarge-desc {
+    display: table-cell;
+    vertical-align: top;
+    padding: 12px 18px 0 0;
+}
+
+#licenceform input {
+    display: block;
+}
+
+/*------------------------------------*\
+    MODAL WINDOW
+\*------------------------------------*/
+
+body.modal-open {
+    overflow: hidden;
+}
+
+/* all styles */
+.group:after, .mdl-split:after, .mdl-access-wrap:after, .mdl-radio-label:after, .mdl-btn-wrap:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* wrapper */
+.modal-window {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.25);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.modal-window:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-window input[type='button'] {
+    -webkit-appearance: none;
+}
+
+.mdl-window {
+    background-color: #ffffff;
+    width: 600px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    color: #333333;
+}
+
+.mdl-window-inner {
+    max-width: 800px;
+}
+
+.mdl-window .mdl-window-inner {
+    padding: 0 36px 86px;
+    position: relative;
+}
+
+.mdl-window-inner .modal-errors-info:first-child {
+    margin: 18px 0 -8px 0;
+}
+
+.mdl-head {
+    border-bottom: 1px solid #4f9d9e;
+    margin: 0 36px;
+}
+
+/* titles */
+.mdl-title {
+    color: #0d3880;
+    font-family: 'Merriweather', Georgia, serif;
+    font-weight: normal;
+    font-size: 28px;
+    text-align: left;
+    margin: 7px 0 10px;
+    padding: 0;
+    height: auto;
+    line-height: 34px;
+}
+
+/* focus */
+.mdl-window-inner *:focus {
+    outline: 1px dotted #000000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+/* text style */
+.mdl-window-inner .mdl-title {
+    text-align: left;
+    margin-bottom: -15px;
+}
+
+.mdl-sub-head {
+    color: #0d3880;
+    margin: 20px 0 0;
+    font-size: 22px;
+    font-weight: normal;
+    font-family: 'Merriweather', Georgia, serif;
+}
+
+.mdl-p {
+    font-size: 1em;
+    line-height: 1.3em;
+    margin: 24px 0 8px 0;
+    display: block;
+}
+
+.mdl-p strong {
+    font-weight: bold;
+}
+
+.mdl-p-emphasis {
+    width: 100%;
+    background-color: #ecf5ff;
+    padding: 16px;
+    margin-top: 0;
+}
+
+.mdl-link {
+    color: #004aac;
+    font-weight: normal;
+}
+
+.mdl-link:hover {
+    text-decoration: underline;
+}
+
+.mdl-tandc-link {
+    text-decoration: underline;
+    color: #333333;
+    font-weight: normal;
+}
+
+.mdl-p-link {
+    margin: 8px 0;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+.mdl-p-help {
+    margin: 8px 0 0;
+    display: block;
+    line-height: 1.3em;
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.mdl-p-warning {
+    margin: 20px 0 -12px;
+}
+
+.modal-errors-info {
+    font-size: 0.9em;
+    margin: 8px 0 0 0;
+    color: #c73b2a;
+    line-height: 1.3em;
+}
+
+/* text inputs */
+.mdl-window-inner input:not([type="radio"]) {
+    border-radius: 0px;
+}
+
+.mdl-text-input {
+    height: 50px;
+    min-width: 100px;
+    max-width: 400px;
+    width: 100%;
+    display: inline-block;
+    padding: 0 8px;
+    background-color: #ffffff;
+    border: 1px solid #0d3880;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.mdl-input-error {
+    box-shadow: 0 0 0 1px #c73b2a;
+    -webkit-appearance: none;
+}
+
+input[disabled="disabled"] {
+    cursor: not-allowed;
+}
+
+.mdl-input-success:after {
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    right: 0;
+    content: url("_us-oxford-learners-dict-images-modal-mdl-tick.svg");
+    padding: 12px 10px;
+    z-index: 10;
+}
+
+/* text inputs with icons */
+.mdl-text-icon-wrap {
+    height: 50px;
+    max-width: 400px;
+    min-width: 100px;
+}
+
+.mdl-text-icon-wrap * {
+    display: inline-block;
+    float: left;
+}
+
+.mdl-text-icon-wrap .mdl-text-icon {
+    width: 50px;
+    height: 100%;
+    margin-right: 0px;
+    background-color: #0d3880;
+    padding: 10px 10px 0 15px;
+}
+
+.mdl-text-icon-wrap .mdl-text-input-wrap {
+    width: 100%;
+    padding-left: 50px;
+    margin-left: -50px;
+    position: relative;
+}
+
+/* split content to fit two per line */
+.mdl-sub-head + .mdl-split {
+    margin-top: -12px;
+}
+
+.mdl-sub-head + .mdl-p {
+    margin-top: 12px;
+}
+
+.mdl-split .mdl-half {
+    width: 48%;
+}
+
+.mdl-split .mdl-half.mdl-half-left {
+    float: left;
+}
+
+.mdl-split .mdl-half.mdl-half-right {
+    float: right;
+}
+
+.mdl-split .modal-errors-info {
+    margin-left: 0;
+}
+
+/* access code input field */
+.mdl-access-wrap .mdl-access-input-wrap .mdl-text-input {
+    float: left;
+}
+
+.mdl-access-wrap .mdl-btn {
+    float: right;
+    margin-top: 0 !important;
+    height: 50px;
+}
+
+.mdl-access-wrap + .modal-errors-info {
+    margin-left: 0;
+}
+
+/* dropdown lists */
+.mdl-dropdown {
+    width: 100%;
+}
+
+/* radiobuttons */
+.mdl-radio-wrap {
+    margin-top: 16px;
+}
+
+.mdl-sub-head + .mdl-radio-wrap {
+    margin-top: 6px;
+}
+
+.mdl-radio-label {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding-right: 4px;
+    margin: 0;
+    cursor: pointer;
+    display: block;
+}
+
+.mdl-radio-label:hover {
+    background-color: #ecf5ff;
+}
+
+.mdl-radio-label .mdl-radio {
+    display: inline-block;
+    margin: 4px 7px;
+    vertical-align: top;
+    width: 12px;
+    height: 13px;
+    float: left;
+}
+
+.mdl-radio-label .mdl-radio-text {
+    display: inline-block;
+    margin: 0;
+    float: left;
+    width: 100%;
+    padding-left: 40px;
+    margin-left: -40px;
+    line-height: 1.5em;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/* block text */
+.mdl-block {
+    background-color: #ecf5ff;
+    margin: 16px 0 0;
+    padding: 16px;
+    padding-top: 4px;
+}
+
+.mdl-block .mdl-sub-head {
+    margin: 8px 0 0;
+}
+
+.mdl-block .mdl-block-p {
+    margin: 12px 0;
+    line-height: 22px;
+}
+
+.mdl-block .mdl-block-list {
+    padding-left: 25px;
+    list-style-type: disc;
+}
+
+.mdl-block .mdl-block-list li {
+    margin: 8px 0;
+}
+
+.mdl-block .mdl-block-list li:last-of-type {
+    margin-bottom: 0;
+}
+
+.mdl-block .mdl-btn-wrap {
+    margin-top: 12px;
+}
+
+.mdl-block .mdl-btn-wrap .mdl-p {
+    float: left;
+}
+
+/* collapsible text */
+.mdl-list {
+    padding-left: 25px;
+    list-style-type: disc;
+}
+
+.mdl-list li {
+    margin: 0;
+}
+
+.info {
+    margin-bottom: -10px;
+}
+
+/* error message [top of modal] */
+.mdl-block-error {
+    border: 1px solid #c73b2a;
+    margin: 16px 36px;
+    padding: 6px 12px;
+}
+
+.mdl-block-error .mdl-block-error-p {
+    margin: 12px;
+    line-height: 1.4em;
+}
+
+/* buttons */
+.mdl-btn {
+    height: 44px !important;
+    border-radius: 0 !important;
+    line-height: 34px;
+    padding: 0 16px;
+    font-family: 'Merriweather', Georgia, serif;
+    font-weight: bold;
+    font-size: 1.1em;
+    min-width: 150px;
+    display: inline-block;
+    color: #ffffff !important;
+    background-color: #07255e;
+    border: 2px solid transparent;
+    text-align: center;
+}
+
+.mdl-btn:hover {
+    background-color: #051c46;
+    cursor: pointer;
+}
+
+.mdl-btn:active {
+    background-color: #041638;
+}
+
+.mdl-btn.mdl-btn-main {
+    background-color: #00123c;
+    border-color: transparent;
+    font-size: 1.1em;
+}
+
+.mdl-btn.mdl-btn-main:hover, .mdl-btn.mdl-btn-main:active {
+    background-color: #004aac;
+}
+
+.mdl-btn:not(.mdl-btn-left):not(.mdl-btn-right) {
+    margin-top: 24px;
+}
+
+.mdl-btn.mdl-tandc {
+    border-color: #0d3880;
+    color: #0d3880;
+    background-color: #ffffff;
+}
+
+.mdl-btn-wrap {
+    position: relative;
+    margin-top: 24px;
+}
+
+.mdl-btn-wrap .mdl-btn-left {
+    float: left;
+}
+
+.mdl-btn-wrap .mdl-btn-right {
+    float: right;
+}
+
+.mdl-btn-wrap .mdl-p {
+    float: right;
+    height: 44px;
+    line-height: 34px;
+    padding: 6px 8px;
+    margin: 0;
+}
+
+.mdl-btn-wrap.mdl-btn-wrap-link {
+    text-align: right;
+}
+
+.mdl-btn-wrap.mdl-btn-wrap-link .mdl-btn-right, .mdl-btn-wrap.mdl-btn-wrap-link .mdl-p {
+    float: left;
+    display: inline-block;
+}
+
+.mdl-btn-link {
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.mdl-btn-link:hover {
+    text-decoration: none;
+}
+
+/* IDM modal errors */
+.show-modal-errors-info {
+    display: block;
+}
+
+.mdl-split .modal-errors-info {
+    margin-left: 0;
+}
+
+/* table */
+.mdl-table {
+    margin-top: 12px;
+    background-color: #ecf5ff;
+    width: 100%;
+    text-align: center;
+    vertical-align: top;
+}
+
+.mdl-table tr {
+    border-bottom: 2px solid #ffffff;
+}
+
+.mdl-table th {
+    width: 30%;
+    padding: 10px 7px;
+    color: #07255e;
+    font-size: 1.1em;
+    font-weight: normal;
+}
+
+.mdl-table td {
+    padding: 7px;
+}
+
+.mdl-table td .mdl-table-p {
+    margin: 0;
+}
+
+.mdl-table .mdl-table-tick {
+    width: 60px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.mdl-table .mdl-table-tick:after {
+    position: absolute;
+}
+
+/* modernizr support */
+.no-svg .mdl-text-input.mdl-input-success:after {
+    content: url("_us-oxford-learners-dict-images-mdl-tick.png");
+}
+
+/* responsive design */
+@media screen and (max-width: 762px) {
+    .mdl-split .mdl-half {
+        width: 100%;
+        float: none;
+    }
+}
+
+/*------------------------------------*\
+    TABBED CONTENT
+\*------------------------------------*/
+
+.mdl-tabs {
+    padding: 10px 10px 0;
+    margin: 24px 0 5px;
+    background-color: grey;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+
+.mdl-tabs .mdl-tab {
+    list-style-type: none;
+    display: inline-block;
+    border-radius: 7px 7px 0 0;
+    background-color: silver;
+    border-bottom: 0;
+    padding: 7px 15px 5px;
+    margin-right: 2px;
+}
+
+.mdl-tabs .mdl-tab:hover {
+    background-color: white;
+    color: #444444;
+    background-color: #004aac;
+    color: white;
+}
+
+.mdl-tabs .mdl-tab.is-active {
+    background-color: #07255e;
+    color: white;
+    background-color: white;
+    color: #444444;
+    box-shadow: 0 0 5px grey;
+}
+
+.mdl-tab-content {
+    display: none;
+    overflow-x: auto;
+}
+
+.mdl-tab-content.is-active {
+    display: block;
+}
+
+.dictcodeTitle {
+    margin: 5px;
+    font-size: 1.1em;
+    text-align: left;
+    color: #494949;
+    line-height: 2;
+}
+
+.nearest-results {
+    font-size: 26px;
+    margin-bottom: 14px;
+}
+
+/* Restricted for entry & pronunciation */
+.restrictedHeader,
+.restrictedLinks {
+    position: relative;
+}
+
+.restrictedTitle {
+    max-width: 100%;
+    vertical-align: baseline;
+    display: inline;
+}
+
+.restrictedTitle h1,
+.restrictedImg {
+    display: inline-block;
+}
+
+.restrictedImg img {
+    width: 20px;
+    border: 0px solid transparent;
+    margin-left: 10px;
+}
+
+.restrictedLock {
+    font-size: 0.9em;
+    color: #848482;
+    vertical-align: baseline;
+    position: inherit;
+}
+
+.restrictedLogin {
+    font-size: 0.75em;
+    vertical-align: baseline;
+    display: inline-block;
+    position: inherit;
+    bottom: inherit;
+    right: inherit;
+}
+
+.restrictedLinks {
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.restrictedLinks table {
+    width: 100%;
+}
+
+.restrictedLinks .bookCoverImage {
+    width: 20%;
+}
+
+.result-list {
+    list-style: initial;
+    padding-left: 25px;
+}
+
+.didyoumean {
+    font-size: 1.2em;
+    line-height: 2;
+    margin: 5px;
+}
+
+/* other links box */
+.premium-box {
+    border: 1px solid #00123c;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+}
+
+.premium-box.data-fold .icon {
+    background: url("_us-oxford-learners-dict-images-wordlist-icon-plus-minus-white.png") center -50px no-repeat;
+    background-size: 13px auto;
+}
+
+.premium-box .icon {
+    background: url("_us-oxford-learners-dict-images-wordlist-icon-plus-minus-white.png") center 0 no-repeat;
+    background-size: 13px auto;
+    margin-left: 6px;
+}
+
+.premium-title {
+    text-align: left;
+    padding: 0 10px 0 35px;
+    line-height: 35px;
+    position: relative;
+    background-color: #00123c;
+    color: #ffffff;
+}
+
+.premium-box.data-fold .otherLinks {
+    display: none;
+}
+
+.otherLinks {
+    color: #07255e;
+    padding-bottom: 4px;
+}
+
+.otherLinks li {
+    line-height: 30px;
+    padding-left: 14px;
+}
+
+.premium-box-below .premium-box {
+    margin-top: 20px;
+    background: white;
+}
+
+.premium-box-below ul.otherLinks {
+    padding: 4px 0;
+}
+
+.premium-box-below ul.otherLinks li {
+    display: inline-block;
+    padding: 0 14px;
+}
+
+/* -end- other links box */
+
+[class^="icon-"],
+[class*=" icon-"]:not(.social-facebook):not(.social-twitter):not(.wl-add):not(.test-btn):not(.audio_play_button) {
+    vertical-align: text-bottom;
+    display: inline-block;
+    font-family: 'oup-icons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon, .icon-plus, .icon-minus {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 40px;
+    background: url("_us-oxford-learners-dict-images-wordlist-icon-plus-minus.png") center 0 no-repeat;
+    background-size: 13px auto;
+    margin: 0;
+    left: 0px;
+    cursor: pointer;
+}
+
+.data-fold .icon, .icon-plus {
+    background-position: center -50px;
+}
+
+.expandable ul {
+    display: none;
+    padding-left: 21px;
+}
+
+.expandable div,
+.expandable ul li {
+    position: relative;
+}
+
+.expandable div {
+    display: flex;
+}
+
+.expandable a {
+    padding: 7px 0 7px 25px;
+    border-left: 4px solid transparent;
+    display: inline-block;
+}
+
+.expandable a.selected {
+    font-weight: bold;
+    background-color: #E5E8E8;
+}
+
+.relatedBlock a {
+    color: #494949;
+    line-height: 22px;
+    width: auto;
+    background-position: left center;
+}
+
+a[data-type-class="normalDisplay"] {
+    color: white;
+}
+
+a[data-type-class="lastweekDisplay"] {
+    color: #E6F507;
+}
+
+a[data-type-class="expiredInfOneWeekDisplay"] {
+    color: #FB0000;
+}
+
+.statusBox {
+    float: right;
+}
+
+.statusBox img {
+    margin-left: 10px;
+}
+ol {
+    list-style-type: decimal;
+    padding-left: 20px
+}
+
+img.icon {
+    vertical-align: text-bottom;
+    margin-top: 0;
+    margin-right: 2px;
+    margin-left: 0;
+    margin-bottom: 0
+}
+
+div.icon {
+    display: inline;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: lighter;
+    font-size: 7pt;
+    text-transform: uppercase;
+    color: #FFF;
+    padding: 0 .6em .2em .6em
+}
+
+div.icon-helpsym {
+    background-color: transparent;
+    font-family: "verdana";
+    font-weight: bold;
+    color: #276E98;
+    font-variant: small-caps
+}
+
+div.icon-pvsym {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: lighter;
+    color: #078d8f;
+    font-size: 18px;
+    text-indent: -1em
+}
+
+div.icon-oppsym {
+    color: #C00B19;
+    background-color: transparent;
+    font-family: Verdana;
+    font-size: 11px;
+    padding: 0;
+    text-transform: lowercase
+}
+
+div.icon-idsym {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: lighter;
+    color: #35338a;
+    font-size: 19px
+}
+
+div.icon-synsym {
+    background-color: transparent;
+    font-family: "verdana";
+    font-weight: normal !important;
+    color: #C00B19;
+    text-transform: lowercase;
+    font-size: 11px;
+    padding: 0 !important
+}
+
+.labelsAbout {
+    text-align: left;
+    border: 0px none;
+    width: 100%
+}
+
+.labelsAbout .pron-usonly:hover {
+    background-image: url("_us-oxford-learners-dict-images-documents-usonly-audio.png");
+    background-repeat: no-repeat;
+    background-position: left bottom
+}
+
+.labelsAbout .pron-usonly {
+    width: 29px;
+    height: 30px;
+    border: 0;
+    background-image: url("_us-oxford-learners-dict-images-documents-usonly-audio.png");
+    background-repeat: no-repeat;
+    background-position: left top
+}
+
+.sup, sup {
+    vertical-align: super;
+    font-size: 65%
+}
+
+.sub {
+    vertical-align: sub;
+    font-size: 65%
+}
+
+button.key {
+    height: 15px;
+    width: 8px;
+    padding: 0px;
+    margin: 0px;
+    cursor: normal;
+    padding: 0px;
+    border: 0px;
+    margin-right: 5px;
+    margin-top: 5px;
+    background-repeat: no-repeat;
+    vertical-align: top
+}
+
+.block-g {
+    float: right
+}
+
+.clear {
+    clear: both;
+    height: 2px
+}
+
+#entryContent .side {
+    float: right;
+    width: 164px;
+    text-align: center;
+    margin-bottom: 0px
+}
+
+.ColloPanel, .ThesPanel {
+    font-size: 80%;
+    text-align: left;
+    display: block;
+    border-radius: 9px 9px 9px 9px;
+    border-style: solid;
+    border-color: blue;
+    margin: 15px;
+    border-width: 1px;
+    padding: 3px;
+    column-count: 3;
+    column-gap: 0em;
+    -moz-column-count: 3;
+    -moz-column-gap: 0em;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 0em;
+    background-color: #FFF
+}
+
+ul.sketch {
+    margin-top: 0px;
+    margin-left: -20px
+}
+
+.ColloPanel .xr, .ThesPanel .xr {
+    font-weight: bold;
+    font-size: 130%;
+    display: list-item;
+    list-style-type: square;
+    color: #5BA7DA;
+    margin-left: 20px
+}
+
+.CorpusHeader {
+    display: block;
+    padding: 3px;
+    font-size: 120%;
+    background-color: #00315A;
+    color: white;
+    border-top-left-radius: 9px
+}
+
+.ColloHeader {
+    display: block;
+    color: white;
+    font-weight: bold;
+    background-color: #5BA7DA;
+    font-size: 100%;
+    text-transform: uppercase;
+    margin-left: 2px;
+    margin-top: 2px;
+    padding: 3px
+}
+
+#informational-content > h2 {
+    font-family: 'Merriweather', Georgia, serif
+}
+
+.search-term {
+    font-weight: bold
+}
+
+#results-container-all ul li {
+    margin-bottom: 7px
+}
+
+#browse > div {
+    margin-bottom: 7px
+}
+
+#browse #result ul {
+    padding: 0
+}
+
+#browse_lists {
+    margin-top: 16px
+}
+
+#browse_lists ul {
+    margin-bottom: 10px
+}
+
+.grey-grad, .idsym-g, .ui-grad dt, .z_idsym {
+    box-shadow: 0 50px 50px -30px white inset;
+    background-color: #cccccc;
+    border: 1px solid #cccccc
+}
+
+.webtop-g {
+    background-color: #4577bf;
+    margin: 0 -28px 4px -28px;
+    padding: 7px 28px 4px 28px;
+    line-height: 28px
+}
+
+.webtop-g h2 {
+    font-size: 21px;
+    font-weight: bold;
+    font-family: 'Open Sans', Arial, sans-serif;
+    padding: 0;
+    color: white;
+    line-height: 30px;
+    display: inline-block
+}
+
+.top-container {
+    background-color: #ecf5ff;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 10px;
+    padding: 0 28px 0 28px;
+    clear: both
+}
+
+.btn.prac-pron {
+    display: none
+}
+
+.oxford3000, .academic {
+    display: inline-block;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    margin: 0 0 -8px;
+    position: relative;
+    top: -5px
+}
+
+.oxford3000:hover, .academic:hover {
+    text-decoration: none
+}
+
+.oxford3000 {
+    background-image: url("_us-oxford-learners-dict-images-wordlist-icon-ox3000.png")
+}
+
+.academic {
+    background-image: url("_us-oxford-learners-dict-images-wordlist-icon-academic.png")
+}
+
+.entry-header .share-this-entry {
+    margin: 0;
+    padding-top: 0;
+    display: table
+}
+
+.entry-header .responsive_entry_center_left {
+    margin-bottom: 0 !important;
+    display: table-cell;
+    float: none
+}
+
+.entry-header .responsive_entry_center_left_premium {
+    margin-bottom: 0 !important;
+    display: table-cell;
+    float: none
+}
+
+.entry-header {
+    margin: 7px 0;
+    display: table
+}
+
+.responsive_entry_center p.definition-title, .responsive_entry_center_left_premium p.definition-title {
+    font-size: 11px;
+    line-height: 14px;
+    padding-bottom: 0px;
+    margin-bottom: 0;
+    display: table-cell;
+    vertical-align: bottom
+}
+
+.share-this-entry .right-colum {
+    margin: 0;
+    padding-top: 0 !important
+}
+
+.share-this-entry .col_middle_left, .share-this-entry .right-colum {
+    display: table-cell
+}
+
+.social-wrap {
+    width: 180px;
+    height: 28px;
+    padding: 2px 0
+}
+
+.social-wrap a {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    margin: 1px 0 0 0;
+    border: 0;
+    background: #4577bf url("_us-oxford-learners-dict-images-social.png") no-repeat;
+    background-size: auto 100%;
+    cursor: pointer;
+    border-radius: 30px
+}
+
+.social-wrap a:hover {
+    background-color: #0d3880
+}
+
+#plusone-box {
+    display: inline-block;
+    vertical-align: top;
+    margin: 1px 0 0 1px
+}
+
+.facebook-btn {
+    background-position: 0px 0 !important
+}
+
+.twitter-btn {
+    background-position: -24px 0 !important
+}
+
+.stumbleupon-btn {
+    background-position: -48px 0 !important
+}
+
+.diigo-btn {
+    background-position: -72px 0 !important
+}
+
+.email-btn {
+    background-position: -96px 0 !important
+}
+
+#ox-enlarge {
+    float: right;
+    position: relative;
+    z-index: 10;
+    clear: both
+}
+
+#ox-enlarge img {
+    margin-bottom: -7px
+}
+
+#ox-enlarge a.topic {
+    display: block;
+    text-align: right;
+    position: relative;
+    padding: 2px;
+    margin: 0 0 12px 12px;
+    background-color: #c0c0c0
+}
+
+#ox-enlarge a.topic:hover {
+    text-decoration: none;
+    background-color: #4577bf;
+    color: white
+}
+
+#ox-enlarge .ox-enlarge-label {
+    text-indent: 50px;
+    overflow: hidden;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    bottom: 0;
+    right: 0;
+    background-image: url("_us-oxford-learners-dict-images-entry-enlarge-img.png");
+    background-color: inherit;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 14px 14px
+}
+
+.relatedentries {
+    max-height: 200px;
+    text-align: left;
+    color: #8f0610;
+    line-height: 1.25
+}
+
+.relatedentries ul {
+    margin: 0;
+    padding: 0 0 0 10px
+}
+
+.relatedentries a {
+    color: #000
+}
+
+#rightcolumn h4.no-rule {
+    margin-top: 0;
+    border-bottom: 0 none
+}
+
+.no-rule {
+    border-bottom: 0;
+    margin-bottom: 0
+}
+
+dd {
+    overflow: hidden;
+    -webkit-transition: max-height 0.5s;
+    -moz-transition: max-height 0.5s;
+    transition: max-height 0.5s;
+    max-height: 4000px
+}
+
+dd.deep {
+    max-height: 9000px
+}
+
+.hide + dd, .hide + dd.deep {
+    max-height: 0
+}
+
+.ui-grad dt, .ui-grad dd {
+    margin-top: -1px
+}
+
+.ui-grad ul {
+    margin-left: 14px;
+    margin-right: 14px;
+    padding: 0
+}
+
+.ui-grad dd {
+    border: 1px solid #cccccc
+}
+
+.ui-grad dt:first-child {
+    border-radius: 8px 8px 0 0;
+    margin-top: 0
+}
+
+.ui-grad dt {
+    padding: 5px 6px 5px 6px;
+    color: #444444
+}
+
+.ui-grad dt.hide:hover {
+    cursor: pointer
+}
+
+.ui-grad dt:not(.hide):before {
+    content: none
+}
+
+.ui-grad dt:not(.hide) {
+    padding: 6px 14px 5px
+}
+
+.ui-grad dt.hide:before {
+    background: url("_us-oxford-learners-dict-images-documents-icon-plus-minus-grey.png") 0 -13px no-repeat;
+    background-size: 100%
+}
+
+.accordion dl {
+    margin: 0
+}
+
+.accordion .more {
+    display: none
+}
+
+.accordion .show .more {
+    display: block
+}
+
+.accordion dt:before {
+    vertical-align: baseline;
+    content: "";
+    display: inline-block;
+    margin-right: 6px;
+    margin-left: -2px;
+    margin-bottom: -1px;
+    width: 13px;
+    height: 13px
+}
+
+.see-more {
+    display: block;
+    padding: 6px;
+    line-height: 18px;
+    text-align: center;
+    border-top: 1px solid #aaaaaa;
+    color: grey
+}
+
+.list-col a, .list-col span.selected {
+    display: block;
+    line-height: 20px;
+    padding-top: 3px;
+    padding-bottom: 4px;
+    font-weight: normal
+}
+
+.list-col {
+    padding-left: 0
+}
+
+.list-col .selected {
+    color: #282828;
+    padding-left: 7px;
+    padding-right: 7px;
+    background-color: #dddddd;
+    border-radius: 4px;
+    margin: 3px -7px 4px
+}
+
+.list-col h6 {
+    border-bottom: 1px solid silver
+}
+
+.topic-explore p {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 15px
+}
+
+.topic-explore > h3 {
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 19px;
+    margin: 0 0 7px;
+    padding: 0
+}
+
+.topic-explore h4 {
+    border-top: 1px solid #C0C0C0;
+    border-bottom: 1px solid #C0C0C0;
+    padding: 8px 0
+}
+
+.topic-explore ul {
+    padding-left: 0px
+}
+
+.topic-explore h6 {
+    border: 0px none;
+    margin: 8px 0px 0px 0px
+}
+
+.topic-explore h6 a {
+    font-size: 15px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.7)
+}
+
+.list-nested > li {
+    display: inline-block;
+    padding-right: 15px
+}
+
+.list-nested-pool > li {
+    background-color: grey;
+    border-bottom: 1px solid white
+}
+
+.list-nested-pool ul {
+    padding: 3px 0 4px;
+    background: #efefef;
+    background: white
+}
+
+.wordpool {
+    margin-top: 14px;
+    padding-left: 8px
+}
+
+.wordpool li {
+    display: inline-block;
+    margin: 0;
+    padding: 0 14px 7px 0
+}
+
+.wordpool a, .wordpool span {
+    font-weight: normal
+}
+
+.wordpool-active span {
+    font-weight: bold
+}
+
+.section.partner {
+    margin-top: 2em
+}
+
+.wordlist-page h1 {
+    line-height: 1.2em
+}
+
+.wordlist-page p {
+    max-width: 700px
+}
+
+.wordlist-info-page {
+    margin-bottom: 14px
+}
+
+.wordlist-info-page .oxford3000-blue, .wordlist-info-page .academic-blue {
+    width: 20px;
+    height: 20px
+}
+
+.wordlist-info-page ul {
+    padding-left: 20px;
+    list-style-type: disc;
+    margin-bottom: 7px
+}
+
+.middle_wrap h1 {
+    font-family: 'Merriweather', Georgia, serif
+}
+
+.middle_wrap > h1 {
+    margin-top: 7px
+}
+
+.open-close dt:hover {
+    color: #0d3880
+}
+
+.ui-plain {
+    max-width: 700px
+}
+
+.ui-plain dl:first-child {
+    border-top: 1px solid grey
+}
+
+.ui-plain dt {
+    padding: 7px 7px 7px 21px;
+    color: #282828;
+    font-weight: bold;
+    cursor: pointer
+}
+
+.ui-plain dt:before {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 24px;
+    background: url("_us-oxford-learners-dict-images-wordlist-icon-plus-minus.png") 0 0 no-repeat;
+    background-size: 100%;
+    margin: -7px 0 0 -21px
+}
+
+.ui-plain dt.hide:before {
+    background-position: 0 -50px
+}
+
+.ui-plain dd {
+    border-bottom: 1px solid silver
+}
+
+.ui-plain dt:before {
+    position: relative;
+    margin-right: 8px;
+    display: inline-block
+}
+
+.topic-desc {
+    max-width: 750px
+}
+
+.oxford3000-blue, .academic-blue {
+    display: inline-block;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    margin: -8px 0 -5px
+}
+
+.oxford3000-blue {
+    background-image: url("_us-oxford-learners-dict-images-wordlist-icon-ox3000-blue.png")
+}
+
+.academic-blue {
+    background-image: url("_us-oxford-learners-dict-images-wordlist-icon-academic-blue.png")
+}
+
+.topic-dt .side-selector__left ul ul ul ul li > a {
+    margin-left: -62px;
+    padding-left: 40px;
+    margin-top: 2px;
+    text-decoration: none;
+    background-color: #efefef;
+    background-color: white
+}
+
+.side-selector {
+    border-radius: 7px;
+    overflow: hidden;
+    background-color: #eee;
+    border: 1px solid #cccccc
+}
+
+.side-selector__left, .side-selector__right {
+    padding: 0 0;
+    width: 40%;
+    float: left
+}
+
+.side-selector__right {
+    width: 60%;
+    float: left;
+    background-color: white
+}
+
+.side-selector__right .sound.audio_play_button {
+    margin: 0
+}
+
+@media screen and (max-width: 762px) {
+    .side-selector__left, .side-selector__right {
+        width: 100%;
+        float: none
+    }
+
+    .side-selector {
+        margin-right: -15px;
+        margin-left: -15px;
+        border-radius: 0
+    }
+}
+
+.side-selector__left ul ul ul ul li.is-revealed > a {
+    background-color: #4577bf;
+    color: white
+}
+
+.side-selector__left .ei-g {
+    margin-top: 0
+}
+
+.side-selector__left .top-container {
+    margin: 0;
+    padding: 0;
+    background-color: transparent
+}
+
+.side-selector__left .top-g {
+    padding: 0
+}
+
+.side-selector__left .webtop-g {
+    margin: 0 -7px;
+    padding: 6px 7px
+}
+
+.side-selector__left .link-right {
+    padding-top: 7px
+}
+
+#entries-selector {
+    padding: 7px
+}
+
+#entries-selector ul {
+    list-style-type: none;
+    padding: 0
+}
+
+#entries-selector .wl-select {
+    padding: 0 7px 0 21px;
+    margin: -7px;
+    background: #07255e url("_us-oxford-learners-dict-images-wordlist-icon-select-arrow.png") 0 top no-repeat
+}
+
+#entries-selector a, #entries-selector span {
+    padding: 7px 14px;
+    margin-bottom: 2px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 7px;
+    font-weight: bold
+}
+
+#entries-selector a:hover {
+    background-color: #4577bf;
+    color: white
+}
+
+#entries-selector .currentpage a, #entries-selector .currentpage span {
+    background-color: #07255e;
+    color: white
+}
+
+#entries-selector select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    font-size: 15px;
+    outline: none;
+    margin: 0;
+    padding: 8px 15px 9px;
+    background-color: transparent;
+    width: 100%;
+    color: white
+}
+
+.hideoverflow {
+    overflow: hidden
+}
+
+.outer {
+    position: relative;
+    left: 50%;
+    float: left
+}
+
+.inner {
+    position: relative;
+    left: -50%;
+    float: left
+}
+
+.wl-nav {
+    border-color: silver;
+    border: 0
+}
+
+.wl-nav a, .wl-nav span {
+    display: inline-block;
+    padding: 10px 15px;
+    border-right: 1px solid silver;
+    color: #444444;
+    font-weight: normal
+}
+
+.wl-nav li:hover {
+    box-shadow: 0 -50px 50px -30px white inset;
+    background-color: #cccccc
+}
+
+.wl-nav li:hover a {
+    text-decoration: none
+}
+
+.wl-nav li.activepage {
+    background-color: white
+}
+
+.wl-nav li.activepage:hover {
+    background-color: white !important;
+    box-shadow: none
+}
+
+.currentpage a {
+    color: #890017
+}
+
+.currentpage a .pos {
+    font-weight: normal
+}
+
+.paging_links {
+    padding: 0
+}
+
+.paging_links li:last-child a {
+    border-right: 0
+}
+
+.paging_links .page_range {
+    font-family: Verdana;
+    font-weight: bolder;
+    margin-right: 30px;
+    display: inline-block
+}
+
+.paging_links .page_info {
+    display: inline-block;
+    margin-right: 30px
+}
+
+#entrylist1 a {
+    font-weight: bold
+}
+
+.result-list1 {
+    padding: 4px 0;
+    list-style-type: none
+}
+
+.wordlist-oxford3000 li {
+    padding: 7px
+}
+
+.soundList {
+    display: inline
+}
+
+.lang-study-page .pron-g {
+    white-space: normal
+}
+
+.lang-col {
+    width: 48%;
+    float: left;
+    padding-right: 12px
+}
+
+.mid-grad-bottom, .wl-table tr:first-child {
+    background: #00123c;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #07255e), color-stop(100%, #00123c));
+    background: -webkit-linear-gradient(top, #07255e 0%, #00123c 100%);
+    background: -moz-linear-gradient(top, #07255e 0%, #00123c 100%);
+    background: -ms-linear-gradient(top, #07255e 0%, #00123c 100%);
+    background: linear-gradient(to bottom, #07255e 0%, #00123c 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$blue2', endColorstr='$blue1', GradientType=0)
+}
+
+.pale-grad, .wl-table tr {
+    background: #ffffff;
+    background: -moz-linear-gradient(top, white 0%, #eee 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #eee));
+    background: -webkit-linear-gradient(top, white 0%, #eee 100%);
+    background: -o-linear-gradient(top, white 0%, #eee 100%);
+    background: -ms-linear-gradient(top, white 0%, #eee 100%);
+    background: linear-gradient(to bottom, white 0%, #eee 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eeeeee', GradientType=0)
+}
+
+.wl-table .delete-btn a:before {
+    background: url("_us-oxford-learners-dict-images-myWordlist-btn-trash.png") no-repeat scroll -1px top/100% auto transparent;
+    pointer-events: all
+}
+
+.wl-table .btn.delete-btn:hover a:before {
+    background-position: -1px bottom
+}
+
+.wl-sub-head {
+    background: #4577bf;
+    background: -moz-linear-gradient(top, #4577bf 0%, #345c95 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4577bf), color-stop(100%, #345c95));
+    background: -webkit-linear-gradient(top, #4577bf 0%, #345c95 100%);
+    background: -o-linear-gradient(top, #4577bf 0%, #345c95 100%);
+    background: -ms-linear-gradient(top, #4577bf 0%, #345c95 100%);
+    background: linear-gradient(to bottom, #4577bf 0%, #345c95 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4577bf', endColorstr='#345c95', GradientType=0);
+    color: #ffffff
+}
+
+.btn.test-btn a:before {
+    background: url("_us-oxford-learners-dict-images-myWordlist-btn-test.png") no-repeat scroll -1px top/100% auto transparent
+}
+
+.btn.test-btn a, .btn.delete-btn a {
+    padding-left: 28px
+}
+
+.wl-add a:before {
+    background: url("_us-oxford-learners-dict-images-myWordlist-btn-wordlist.png") no-repeat 0px 0px transparent;
+    background-size: 100%
+}
+
+.wl-table {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #cccccc;
+    border-collapse: separate
+}
+
+.wl-table .wl-col1 {
+    text-align: left;
+    font-size: 16px
+}
+
+.wl-table tr th {
+    color: white;
+    vertical-align: middle
+}
+
+.wl-table th, .wl-table td {
+    text-align: center;
+    line-height: 18px;
+    padding: 12px
+}
+
+.wl-table.wl-edit .wl-col2 {
+    font-style: italic
+}
+
+.wl-table.wl-edit .wl-col3 {
+    text-align: left
+}
+
+.wl-table .wl-col1 a {
+    line-height: 20px;
+    padding-right: 12px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold
+}
+
+.entry-word {
+    font-weight: bold;
+    font-family: 'Open Sans', Arial;
+    color: #4577bf;
+    margin-left: 10px
+}
+
+.hide-delete-icon {
+    display: none
+}
+
+.premium .hide-delete-icon {
+    display: block
+}
+
+h1.my-wordlist-titles {
+    margin: 7px 0 21px
+}
+
+h2.my-wordlist-titles {
+    font-size: 36px;
+    color: #4577bf;
+    font-weight: bold;
+    padding-left: 0;
+    margin-top: 6px;
+    margin-bottom: 24px;
+    line-height: 1em
+}
+
+h3.my-wordlist-titles {
+    line-height: 1.5em;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: #0d3880
+}
+
+h4.my-wordlist-titles {
+    font-weight: bold;
+    margin-bottom: 6px
+}
+
+h5.my-wordlist-titles {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 0 7px;
+    font-weight: bold
+}
+
+.mywordlist-container {
+    padding-left: 15px
+}
+
+.mywordlist-container > .entry > span.h {
+    display: none
+}
+
+.senseinfo {
+    margin-bottom: 6px
+}
+
+.senseinfo .sense_check_box {
+    margin-right: 6px
+}
+
+#wordlist-select {
+    margin-bottom: 7px
+}
+
+.test__question-count {
+    margin: -7px -14px 14px;
+    padding: 5px 12px;
+    background-color: #4577bf;
+    color: white
+}
+
+.test__definition {
+    font-size: 22px;
+    line-height: 26px;
+    color: #07255e;
+    max-width: 650px;
+    font-size: 18px
+}
+
+.test__definition__wrap {
+    margin-top: 14px;
+    margin-bottom: 14px
+}
+
+.test__definition__wrap .pos {
+    margin-bottom: 6px;
+    font-size: 15px;
+    font-weight: normal
+}
+
+.test__definition__wrap p {
+    display: table-cell;
+    padding-right: 14px
+}
+
+.test__form, #add-wordlist {
+    display: table;
+    width: 100%;
+    margin-bottom: 0;
+    vertical-align: top;
+    padding-bottom: 10px
+}
+
+.test__form .test__answer {
+    font-size: 15px;
+    line-height: 1.6em;
+    width: 350px;
+    float: left;
+    margin-bottom: 7px;
+    margin-right: 14px
+}
+
+.test_submit_testme {
+    float: left
+}
+
+.test__form input[type='text'] {
+    border: none;
+    font-size: 16px;
+    padding: 0 10px;
+    line-height: 30px;
+    height: 30px;
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5) inset;
+    color: grey;
+    width: 100%
+}
+
+.test__form #add-wordlist .test__submit {
+    float: left
+}
+
+.result {
+    display: table-cell;
+    vertical-align: middle
+}
+
+.test__attempt, .test__useranswer, .test__skipped {
+    display: inline-block;
+    font-size: 26px;
+    font-weight: bold;
+    width: 100%;
+    margin-left: -30px;
+    padding-left: 30px
+}
+
+.test__skipped {
+    font-size: 24px
+}
+
+.test__attempt {
+    color: #C1272D
+}
+
+.test__useranswer {
+    color: #037531
+}
+
+.test__correctanswer {
+    font-weight: bold;
+    color: #07255E
+}
+
+.test__incorrect, .test__correct {
+    width: 24px;
+    height: 24px;
+    line-height: 20px;
+    background: url("_us-oxford-learners-dict-images-myWordlist-test-cross.png") no-repeat #C1272D;
+    background-size: 100%;
+    border-radius: 24px;
+    border: 2px solid white;
+    vertical-align: top;
+    text-indent: -9999px;
+    display: inline-block;
+    margin-right: 5px
+}
+
+.test__correct {
+    background-color: #037531;
+    background-image: url("_us-oxford-learners-dict-images-myWordlist-test-tick.png")
+}
+
+.test__skipped, .test__correcthead {
+    text-transform: capitalize
+}
+
+.test__form .test__answer, .test__form .test__submit, .test__form .test__skip, #check-answer .test__form .test__next, #check-answer .test__form .test__quit {
+    display: table-cell;
+    vertical-align: top
+}
+
+.test__form .test__submit, .test__form .test__next {
+    padding-right: 5px
+}
+
+.test__next, .test__quit {
+    float: left
+}
+
+.mywordlist-warnings, .error {
+    display: none;
+    color: #c73b2a
+}
+
+.mywordlist-warnings#wait, .mywordlist-warnings#test-loading, .mywordlist-warnings#test-saving-score, .mywordlist-warnings#supp {
+    color: #00123c
+}
+
+.mywordlist-warnings#wait:before, .mywordlist-warnings#test-loading:before, .mywordlist-warnings#test-saving-score:before, .mywordlist-warnings#supp:before {
+    bottom: -2px;
+    content: url("_us-oxford-learners-dict-images-myWordlist-loader-sm.gif");
+    display: inline-block;
+    margin-right: 8px;
+    position: relative
+}
+
+.mywordlist-warnings#wait:before {
+    content: url("_us-oxford-learners-dict-images-myWordlist-loader-sm-blue.gif")
+}
+
+#pronunciation .responsive_row:first-child {
+    margin-bottom: 0
+}
+
+.entry-source {
+    color: white
+}
+
+h2.entry-word {
+    font-weight: bold;
+    color: #4577bf;
+    font-size: 36px;
+    margin-bottom: 7px;
+    margin-top: 18px;
+    display: block
+}
+
+h2 .pos {
+    margin-bottom: 6px;
+    font-size: 15px;
+    font-weight: normal
+}
+
+.pron__wrap h3, .pron_row {
+    max-width: 700px
+}
+
+.pron__wrap h3 {
+    font-size: 18px;
+    color: #4577bf;
+    margin-top: 12px;
+    margin-bottom: 0;
+    padding-bottom: 3px;
+    padding-left: 0px;
+    border-bottom: 1px solid silver
+}
+
+.pron__wrap {
+    max-width: 700px
+}
+
+.pron__wrap h5 {
+    margin-top: 12px;
+    margin-bottom: 0;
+    padding-bottom: 3px;
+    padding-left: 0px;
+    border-bottom: 1px solid silver
+}
+
+.pron_row {
+    padding: 0;
+    line-height: 39px;
+    height: 39px
+}
+
+.pron_row .sound {
+    vertical-align: middle
+}
+
+.pron_row * {
+    display: inline-block
+}
+
+.pron_row .pron_button {
+    border: 1px solid black;
+    padding: 4px;
+    margin-right: 15px
+}
+
+.pron_row .pron_button .pron_button_icon {
+    border: 1px solid black;
+    width: 30px;
+    height: 20px
+}
+
+.pron_row .pron_button_wrapper {
+    padding: 4px;
+    display: inline-block;
+    background-color: #00123c;
+    height: 34px;
+    margin-left: 7px;
+    border-radius: 18px;
+    display: none;
+    vertical-align: middle;
+    box-shadow: 0 38px 38px -38px #e0f2fd inset
+}
+
+.pron_row .btn:hover, .pron_row input[type='submit']:hover, .pron_row .btn.inactive, .pron_row input.inactive[type='submit'] {
+    box-shadow: none;
+    border-width: 0
+}
+
+.pron_row .pron_button_record, .pron_row .pron_button_play, .pron_row .pron_button_stop, .pron_row .pron_record_stop, .pron_row .pron_play_stop {
+    width: 24px;
+    height: 24px;
+    display: block;
+    float: left;
+    margin-right: 6px;
+    background-image: url("_us-oxford-learners-dict-images-pron-prac-play-button-small.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 12px;
+    background-color: silver
+}
+
+.pron_row .pron_button_record {
+    background-image: url("_us-oxford-learners-dict-images-pron-prac-record-button-small.png")
+}
+
+.pron_row .pron_button_stop, .pron_row .pron_record_stop, .pron_row .pron_play_stop {
+    background-image: url("_us-oxford-learners-dict-images-pron-prac-stop-button-small.png")
+}
+
+.pron_row .button_is_active {
+    background-color: #0d3880;
+    box-shadow: 0 30px 30px -30px #45689f inset
+}
+
+.pron_row .button_is_playing {
+    background-color: #579a27;
+    box-shadow: 0 30px 30px -30px #45689f inset
+}
+
+.pron_row .button_is_active.pron_button_record:hover, .pron_row .button_is_active.pron_button_play:hover, .pron_row .button_is_active.pron_button_stop:hover {
+    background-color: #00123c
+}
+
+.pron_row.active .pron_button_wrapper {
+    display: inline-block
+}
+
+@media screen and (max-width: 768px) {
+    .pron_row .btn.play, .pron_row input.play[type='submit'] {
+        margin-left: 10px
+    }
+}
+
+.prac-pron a:before {
+    background: url("_us-oxford-learners-dict-images-pron-prac-btn-prac-pron.png") no-repeat 0px 0px transparent;
+    background-size: 100%
+}
+
+#pronunciation xr-gs, #pronunciation res-g {
+    display: none
+}
+
+#topic-list dd ul {
+    padding-left: 0
+}
+
+#topic-list dd ul li {
+    padding-bottom: 7px
+}
+
+#topic-list dd {
+    border: none;
+    margin-left: 21px
+}
+
+#topic-list dt {
+    font-weight: normal
+}
+
+.topic-desc {
+    margin: 7px 0 7px 0
+}
+
+.box-resources {
+    background-image: url("_us-oxford-learners-dict-images-home-old-ball-resources.png")
+}
+
+.word-list li {
+    display: inline-block;
+    padding: 0 14px 7px 0
+}
+
+.video-page-wrap h4 {
+    margin: 14px 0 7px
+}
+
+.video-player, .video-player__text {
+    display: table-cell;
+    vertical-align: middle
+}
+
+.video-player__text {
+    padding-right: 7px
+}
+
+.video-player {
+    padding-right: 14px;
+    height: 130px;
+    width: 230px
+}
+
+.video-player iframe {
+    display: block
+}
+
+.video__wrap {
+    display: table-row;
+    width: 100%;
+    float: left;
+    margin-bottom: 3px;
+    background-color: #efefef
+}
+
+.video__wrap p {
+    margin-bottom: 0
+}
+
+.video__wrap a {
+    display: block
+}
+
+.video__wrap:last-child {
+    margin-bottom: 0
+}
+
+.video__wrap.full-width {
+    width: 100%;
+    display: block;
+    float: none
+}
+
+@media screen and (max-width: 475px) {
+    .video-player, .video-player__text {
+        display: block;
+        margin-bottom: 5px
+    }
+}
+
+.premium-h {
+    position: relative;
+    margin-bottom: 12px
+}
+
+.premium-h .h {
+    position: absolute;
+    color: #ffffff;
+    left: 20px;
+    bottom: 10px
+}
+
+.premium-h-img {
+    width: 100%;
+    height: auto
+}
+
+.res-g > .unbox {
+    background-color: rgba(199, 110, 6, 0.1);
+    display: block;
+    margin: 12px 0 18px 0;
+    position: relative;
+    overflow: hidden;
+    border-left: 3px solid #C76E06
+}
+
+.res-g > .unbox > .heading {
+    background-color: rgba(199, 110, 6, 0.2);
+    display: block;
+    padding: 6px 12px 6px 12px;
+    font-size: 15.5px;
+    position: relative;
+    overflow: hidden
+}
+
+.res-g > .unbox > .body {
+    display: block;
+    padding: 12px 18px 12px 18px;
+    position: relative;
+    overflow: hidden
+}
+
+.main-container #wotd-box {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.entry {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 15px;
+    color: #333;
+    line-height: 24px;
+    margin-bottom: 15px
+}
+
+.entry a:hover {
+    font-weight: normal
+}
+
+.sans-italic, .etym_i, .geo, .pos, .reg, .subj, .wfp, .xpos, .webtop-g .pos + .pnc, .collapse .ff, .collapse[title^="AWL Collocations"] .er {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-style: italic
+}
+
+.sans-rom, .def, .dh, .dtxt, .footer, .frac-g, .gl, .gram, .li, li.sn-g:before, .ndv, .shcut, .st, .td, .use, .xr-g, .wfo .wrap, .wfo pnc.wrap, .vp .prefix, .vp pnc.prefix {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal
+}
+
+.sans-bold, .cf, .dhb, .dr, .id, .idm, .if, .pv, .th, .v, .ve, .vp, .wfo, .wfw, .xh, .xw {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: bold;
+    font-style: normal
+}
+
+.sans-bolditalic {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: bold;
+    font-style: italic
+}
+
+.sans-sc, .sc, .xr-gs .prefix, .xr-gs pnc.prefix {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-variant: small-caps
+}
+
+.serif-bolditalic, .cl, .x .eb {
+    font-family: "Merriweather", Georgia, serif;
+    font-weight: bold;
+    font-style: italic
+}
+
+.serif-italic, .wx, .x, .x-g {
+    font-family: "Merriweather", Georgia, serif;
+    font-style: italic
+}
+
+.serif-rom, .def-qt {
+    font-family: "Merriweather", Georgia, serif;
+    font-weight: normal;
+    font-style: normal
+}
+
+.italic, .ei {
+    font-style: italic
+}
+
+.bold, .eb {
+    font-weight: bold;
+    font-style: normal
+}
+
+.bolditalic, .ebi {
+    font-weight: bold;
+    font-style: italic
+}
+
+.phonetics-font, .eph, .phon {
+    font-family: "Lucida Sans Unicode", "Lucida Grande"
+}
+
+.entry-box-style, .un, .collapse {
+    background-color: rgba(199, 110, 6, 0.1);
+    display: block;
+    margin: 12px 0 18px 0;
+    position: relative;
+    overflow: hidden
+}
+
+.entry-box-style .x-g, .un .x-g, .collapse .x-g {
+    display: inline;
+    margin-left: 4px;
+    position: static
+}
+
+#entryContent:not(.ocoll) .top-container .entry-box-style, #entryContent:not(.ocoll) .top-container .un, #entryContent:not(.ocoll) .top-container .collapse {
+    background-color: rgba(69, 119, 191, 0.1);
+    border-left: 3px solid #4577bf
+}
+
+#entryContent:not(.ocoll) .top-container .entry-box-style-heading:before, #entryContent:not(.ocoll) .top-container .collapse .heading:before, .collapse #entryContent:not(.ocoll) .top-container .heading:before {
+    background-image: url("_us-oxford-learners-dict-images-wordlist-icon-plus-minus.png")
+}
+
+#entryContent:not(.ocoll) .top-container .entry-box-style-heading:hover, #entryContent:not(.ocoll) .top-container .collapse .heading:hover, .collapse #entryContent:not(.ocoll) .top-container .heading:hover, #entryContent:not(.ocoll) .top-container .entry-box-style-heading:active, #entryContent:not(.ocoll) .top-container .collapse .heading:active, .collapse #entryContent:not(.ocoll) .top-container .heading:active, #entryContent:not(.ocoll) .top-container .unbox.is-active .heading, .unbox.is-active #entryContent:not(.ocoll) .top-container .heading, #entryContent:not(.ocoll) .top-container .entry-box-style-heading:focus, #entryContent:not(.ocoll) .top-container .collapse .heading:focus, .collapse #entryContent:not(.ocoll) .top-container .heading:focus {
+    background-color: rgba(69, 119, 191, 0.2)
+}
+
+#entryContent:not(.ocoll) .top-container .unbox.is-active .heading:before {
+    background-position: center -92px
+}
+
+.entry-box-style-heading, .collapse .heading, .collapse pnc.heading {
+    padding: 6px 12px 6px 12px;
+    margin: -12px -18px -12px -18px;
+    font-size: 15.5px
+}
+
+.entry-box-style-heading:hover, .collapse .heading:hover, .entry-box-style-heading:active, .collapse .heading:active, .unbox.is-active .heading, .unbox.is-active pnc.heading, .entry-box-style-heading:focus, .collapse .heading:focus {
+    background-color: rgba(199, 110, 6, 0.2)
+}
+
+.blockquote {
+    background-color: rgba(199, 110, 6, 0.1);
+    display: block;
+    padding: 12px 18px 12px 18px;
+    margin: 18px;
+    position: relative
+}
+
+.bre, .name {
+    display: none
+}
+
+.cf {
+    display: inline
+}
+
+.def {
+    display: inline
+}
+
+.dr {
+    font-size: 16px
+}
+
+.dr-g {
+    display: block;
+    margin-top: 18px;
+    margin-left: 16px;
+    position: relative
+}
+
+.dr-g:before {
+    content: "";
+    left: -18px;
+    position: absolute;
+    top: 5px;
+    width: 14px;
+    height: 14px;
+    background-image: url("_us-oxford-learners-dict-images-entry-entry-deriv.png");
+    background-size: 14px auto
+}
+
+.dr-gs {
+    display: block
+}
+
+.eph {
+    display: inline-block
+}
+
+.esu {
+    font-size: smaller;
+    vertical-align: super
+}
+
+.footer {
+    font-size: 13px
+}
+
+.frac-g {
+    position: relative;
+    top: -3px
+}
+
+.frac-g:before {
+    content: '/';
+    position: absolute;
+    left: 4px;
+    top: -3px
+}
+
+.gram-g {
+    color: #767676
+}
+
+.h-g {
+    margin-bottom: 15px
+}
+
+.hm, pnc.hm, .xhm {
+    font-size: smaller;
+    margin-left: 1px;
+    position: relative;
+    top: -5.25px
+}
+
+.hm-g {
+    display: block
+}
+
+.idm {
+    font-size: 16px
+}
+
+.idm-g, .pv-g {
+    margin: 12px 18px 18px 18px;
+    display: block
+}
+
+.idm-gs, .pv-gs, .wf-g {
+    border: 1px solid rgba(199, 110, 6, 0.4);
+    border-radius: 10px 10px 0 0;
+    display: block;
+    margin: 18px 0 18px 0;
+    overflow: hidden
+}
+
+.label-g {
+    color: #767676;
+    font-weight: normal
+}
+
+li.sn-g:before {
+    color: #00123c;
+    padding-right: 6px;
+    position: absolute;
+    text-align: right;
+    left: -8px;
+    width: 24px
+}
+
+.ndv {
+    color: #00837d
+}
+
+.pron-g {
+    white-space: nowrap
+}
+
+.pron-g[geo~=br] .prefix {
+    color: #07255e
+}
+
+.pron-g[geo~=n_am] .prefix {
+    color: #8f0610
+}
+
+.pron-gs {
+    display: inline
+}
+
+.pv {
+    display: inline;
+    font-size: 16px
+}
+
+.pvarr:before {
+    content: "";
+    width: 15px;
+    height: 11px;
+    background-image: url("_us-oxford-learners-dict-images-entry-pvarr.png");
+    background-size: 15px auto;
+    display: inline-block
+}
+
+.shcut {
+    font-size: 16.5px;
+    display: block;
+    margin-top: 18px;
+    border-bottom: 1px solid rgba(199, 110, 6, 0.5)
+}
+
+.sn-g {
+    display: block;
+    position: relative;
+    margin-top: 12px
+}
+
+.sn-g[ox3000="y"] .oxford3000 {
+    background-color: #4577bf;
+    border-radius: 12px;
+    width: 20px;
+    height: 20px;
+    margin: 0 6px 3px 0;
+    position: static;
+    vertical-align: middle
+}
+
+.sn-gs, .res-g {
+    display: block
+}
+
+.un {
+    padding: 12px 18px 12px 18px;
+    text-indent: 0
+}
+
+.vp {
+    margin-right: 12px
+}
+
+.vp-g {
+    display: block
+}
+
+.wf-g {
+    border-color: rgba(69, 119, 191, 0.4);
+    margin: 6px 0 6px 0;
+    padding: 6px 12px 6px 12px;
+    display: inline-block
+}
+
+.wfw-g {
+    display: block
+}
+
+.wx {
+    text-decoration: line-through
+}
+
+.x-g {
+    display: block;
+    margin-top: 6px;
+    position: relative;
+    margin-left: 11px
+}
+
+.x-g:before {
+    content: "";
+    left: -11px;
+    top: 8px;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-image: url("_us-oxford-learners-dict-images-entry-entry-bullet.png");
+    background-size: 6px auto
+}
+
+.x-gs {
+    display: block
+}
+
+.xr-gs {
+    display: block;
+    margin-top: 6px
+}
+
+.z_n {
+    padding-right: 6px !important
+}
+
+.nbsp, .side-panel > div, .vp-gs > div, .top-g .pos-g, .z_n + .z, .z_gr_br, #ox-enlarge + .z, .h-g + .z, .pron-gs .wrap, li.sn-g > .num, span[hide~="y"], .top-container br {
+    display: none
+}
+
+.entry-in-other-dict a {
+    font-weight: normal
+}
+
+.webtop-g .pos {
+    margin-left: 6px;
+    color: #ffffff
+}
+
+.webtop-g .pos + .pnc {
+    color: #ffffff
+}
+
+.webtop-g a:last-of-type {
+    margin-right: 4px
+}
+
+.top-g .clear {
+    margin-top: 6px
+}
+
+.top-g .btn {
+    margin-bottom: 13px
+}
+
+.top-g .btn:hover:not(.inactive) a:before {
+    background-position: 0 bottom
+}
+
+.top-g .def {
+    display: block
+}
+
+.top-g > .pron-gs {
+    display: block
+}
+
+.top-g .v-gs:not([type~="sym"]) {
+    display: block
+}
+
+.top-container + .pv-gs, .top-container + .wf-g {
+    border-width: 0;
+    margin: -12px 0 0 0;
+    overflow: auto
+}
+
+.top-container + .pv-gs .pv-g, .top-container + .wf-g .pv-g {
+    margin: 12px 0 18px 0
+}
+
+.top-container + .pv-gs .pv, .top-container + .wf-g .pv {
+    margin-left: 0
+}
+
+.top-container + .pv-gs > .heading, .top-container + .wf-g > .heading {
+    display: none
+}
+
+.top-container + .pv-gs .heading, .top-container + .wf-g .heading {
+    color: #333;
+    font-size: 15.5px;
+    padding: 6px 12px 6px 12px
+}
+
+.top-container + .pv-gs .xr-gs, .top-container + .wf-g .xr-gs {
+    margin-top: 6px
+}
+
+.top-container + .pv-gs .xr-gs:before, .top-container + .wf-g .xr-gs:before {
+    display: inline
+}
+
+.top-container + .pv-gs .Ref, .top-container + .wf-g .Ref {
+    display: inline;
+    margin: 0
+}
+
+.if-g .pron-gs {
+    display: inline
+}
+
+ol.h-g, ol.pv-g, ol.idm-g {
+    list-style-type: none;
+    padding-left: 0;
+    counter-reset: num
+}
+
+ol.h-g li.sn-g, ol.pv-g li.sn-g, ol.idm-g li.sn-g {
+    padding-left: 24px
+}
+
+ol.h-g li.sn-g:before, ol.pv-g li.sn-g:before, ol.idm-g li.sn-g:before {
+    content: counter(num) " ";
+    counter-increment: num
+}
+
+ol.h-g > .res-g, ol.h-g .sn-gs > .xr-gs, ol.pv-g > .res-g, ol.pv-g .sn-gs > .xr-gs, ol.idm-g > .res-g, ol.idm-g .sn-gs > .xr-gs {
+    margin-left: 24px
+}
+
+.def .xr-gs {
+    display: inline
+}
+
+.def .xr-gs:before {
+    display: none
+}
+
+.x-g .cf {
+    margin-right: 6px
+}
+
+.xr-gs:before {
+    content: "";
+    margin-right: 4px;
+    position: relative;
+    top: -1px;
+    width: 13px;
+    height: 9px;
+    background-image: url("_us-oxford-learners-dict-images-entry-entry-arrow.png");
+    background-size: 13px auto;
+    display: inline-block
+}
+
+.xr-gs[xref_type="external"]:before {
+    background-image: url("_us-oxford-learners-dict-images-entry-external-link-icon.png");
+    background-repeat: no-repeat;
+    height: 18px;
+    width: 18px;
+    background-size: 18px auto;
+    vertical-align: middle;
+    margin-right: 8px
+}
+
+.xr-gs[xref_type="external"] .prefix {
+    font-variant: inherit
+}
+
+.ndv .xh {
+    font-weight: normal
+}
+
+.sep + .sep {
+    display: none
+}
+
+.idm-gs > .heading, .idm-gs pnc.heading, .pv-gs > .heading, .pv-gs pnc.heading {
+    display: block;
+    font-size: 18px;
+    padding: 12px 18px 0 18px;
+    color: #C76E06
+}
+
+.idm-gs > .xr-gs, .pv-gs > .xr-gs {
+    margin: 12px 0 12px 0
+}
+
+.idm-gs .un, .pv-gs .un {
+    margin-left: 18px;
+    margin-right: 18px
+}
+
+.pv-gs > .xr-gs {
+    margin-top: 0
+}
+
+.pv-gs > .xr-gs:before {
+    display: none
+}
+
+.pv-gs .xr-gs > .heading {
+    margin-bottom: 6px;
+    display: block;
+    font-size: 18px;
+    padding: 12px 18px 0 18px;
+    color: #C76E06
+}
+
+.pv-gs > .xr-gs .Ref {
+    display: block;
+    margin: 6px 18px
+}
+
+.pv-gs > .xr-gs .Ref .pvarr:before {
+    content: "";
+    width: 15px;
+    height: 11px;
+    background-image: url("_us-oxford-learners-dict-images-entry-pvarr-blue.png");
+    background-size: 15px auto;
+    display: inline-block
+}
+
+.idm-g .top-container, .pv-g .top-container {
+    padding: 0;
+    margin: 0 0 -6px 0;
+    background-color: transparent
+}
+
+.idm-g .top-container .clear, .idm-g .top-container .btn, .idm-g .top-container br, .pv-g .top-container .clear, .pv-g .top-container .btn, .pv-g .top-container br {
+    display: none
+}
+
+.idm-g .v-gs, .pv-g .v-gs {
+    display: block
+}
+
+.idm-g .idm + .label-g, .pv-g .idm + .label-g {
+    margin-left: 6px
+}
+
+.wfo .sym_first:after, .wfo pnc.sym_first:after {
+    content: " "
+}
+
+.blockquote .p {
+    display: block;
+    margin: 0
+}
+
+.blockquote .wrap {
+    display: none
+}
+
+.blockquote:before, .blockquote:after, .blockquote pnc.wrap_open, .blockquote pnc.wrap_close {
+    font-family: Georgia, serif;
+    color: #C76E06;
+    font-size: 80px;
+    position: absolute
+}
+
+.blockquote:before, .blockquote pnc.wrap_open {
+    left: -20px;
+    position: absolute;
+    top: 24px
+}
+
+.blockquote:after, .blockquote pnc.wrap_close {
+    right: -20px;
+    bottom: 0
+}
+
+.blockquote:before {
+    content: "\201C"
+}
+
+.blockquote:after {
+    content: "\201D"
+}
+
+.frac-g .num {
+    font-size: smaller;
+    position: relative;
+    top: -5px;
+    margin-right: 3px
+}
+
+.frac-g .den {
+    font-size: smaller;
+    vertical-align: sub
+}
+
+.un .x-gs {
+    display: inline
+}
+
+.dr-gs .top-container {
+    background-color: transparent;
+    margin: 0;
+    padding: 0
+}
+
+.dr-gs .clear {
+    display: none
+}
+
+.dr-gs .sn-g {
+    margin-top: 6px
+}
+
+.dr-gs .sym_first {
+    margin-right: 6px
+}
+
+.dr-gs .oxford3000 {
+    background-image: url("_us-oxford-learners-dict-images-wordlist-icon-ox3000-blue.png");
+    width: 25px;
+    height: 25px;
+    top: -2px
+}
+
+.dr-gs .academic {
+    background-image: url("_us-oxford-learners-dict-images-wordlist-icon-academic-blue.png");
+    width: 25px;
+    height: 25px;
+    top: -2px
+}
+
+.dr-gs .pos-g {
+    display: inline
+}
+
+.dr-gs .top-g > span {
+    margin-right: 4px
+}
+
+.entry[dict~="oaad"] .collapse[title^="Grammar"] .p {
+    margin-top: 3px;
+    margin-left: 16px;
+    position: relative;
+    display: block
+}
+
+.entry[dict~="oaad"] .collapse[title^="Grammar"] .p:before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 9px;
+    width: 7px;
+    height: 7px;
+    background-image: url("_us-oxford-learners-dict-images-entry-entry-sqbullet.png");
+    background-size: 7px auto
+}
+
+.collapse {
+    padding: 12px 18px 12px 18px;
+    border-left: 3px solid #C76E06
+}
+
+.collapse .heading, .collapse pnc.heading, .collapse .body, .collapse .h1, .collapse .li, .collapse .inline {
+    display: block
+}
+
+.collapse .heading:hover, .collapse pnc.heading:hover {
+    cursor: pointer
+}
+
+.collapse .heading:before, .collapse pnc.heading:before {
+    width: 14px;
+    height: 14px;
+    background-image: url("_us-oxford-learners-dict-images-entry-icon-plus-minus-orange.png");
+    background-size: 100% auto;
+    background-position: center bottom;
+    content: "";
+    display: inline-block;
+    margin-right: 12px;
+    position: relative;
+    top: 1px
+}
+
+.collapse .body, .collapse .heading + .def {
+    display: none
+}
+
+.collapse .h1 {
+    color: #C76E06;
+    font-size: 19.5px;
+    margin: 12px 0 6px 0;
+    font-weight: bold;
+    display: block
+}
+
+.collapse .h3, .collapse .h2 {
+    font-size: 16.5px;
+    margin: 6px 0 3px 0;
+    font-weight: bold;
+    display: block;
+    border-bottom: 1px solid rgba(199, 110, 6, 0.5);
+    color: #333
+}
+
+.collapse .li .x-gs {
+    display: inline
+}
+
+.collapse .x-gs {
+    margin-bottom: 6px
+}
+
+.collapse .x-g:before {
+    display: none
+}
+
+.collapse .x-g:not(:first-of-type):before {
+    content: "";
+    left: -3px;
+    margin-left: -2px;
+    margin-right: 1px;
+    position: relative;
+    display: inline-block;
+    top: -2px;
+    width: 6px;
+    height: 6px;
+    background-image: url("_us-oxford-learners-dict-images-entry-entry-bullet.png");
+    background-size: 6px auto
+}
+
+.collapse .p {
+    margin: 0;
+    display: block
+}
+
+.collapse .p .xr-gs {
+    display: inline;
+    margin: 0
+}
+
+.collapse .p .xr-gs[type~="pdf"] {
+    display: none
+}
+
+.collapse .inline, .collapse ul.inline {
+    display: block;
+    font-size: 16.5px;
+    margin-bottom: 12px
+}
+
+.collapse .inline .li, .collapse ul.inline .li {
+    display: inline-block;
+    font-weight: bold
+}
+
+.collapse .inline .li:not(:last-of-type):after, .collapse ul.inline .li:not(:last-of-type):after {
+    content: "";
+    margin-left: 5px;
+    position: relative;
+    top: -2px;
+    width: 6px;
+    height: 6px;
+    background-image: url("_us-oxford-learners-dict-images-entry-entry-bullet.png");
+    background-size: 6px auto;
+    display: inline-block
+}
+
+.collapse .deflist .li, .collapse ul.deflist .li {
+    margin-top: 6px
+}
+
+.collapse .deflist .li > .eb, .collapse ul.deflist .li > .eb {
+    color: #C76E06;
+    font-size: 16px
+}
+
+.collapse .bullet, .collapse ul.bullet {
+    display: block;
+    margin: 6px 0 12px 0
+}
+
+.collapse .bullet .li, .collapse ul.bullet .li {
+    margin-top: 3px;
+    margin-left: 16px;
+    position: relative;
+    display: block
+}
+
+.collapse .bullet .li:before, .collapse ul.bullet .li:before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 9px;
+    width: 7px;
+    height: 7px;
+    background-image: url("_us-oxford-learners-dict-images-entry-entry-sqbullet.png");
+    background-size: 7px auto
+}
+
+.collapse .table {
+    margin: 12px;
+    display: table
+}
+
+.collapse .th, .collapse .td {
+    padding: 2px 12px 2px 12px;
+    border-bottom: 1px solid rgba(199, 110, 6, 0.5);
+    display: table-cell
+}
+
+.collapse .th {
+    background-color: rgba(199, 110, 6, 0.2)
+}
+
+.collapse .tr {
+    display: table-row
+}
+
+.collapse[title^="Extra"] .x-g {
+    display: block;
+    position: relative
+}
+
+.collapse[title^="Extra"] .x-g:before {
+    content: "";
+    display: inline;
+    left: -11px;
+    margin: 0;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: 8px;
+    background-image: url("_us-oxford-learners-dict-images-entry-entry-bullet.png");
+    background-size: 6px auto
+}
+
+.collapse[title^="Wordfinder"] .xr-gs:before {
+    display: none
+}
+
+.collapse[title^="More Like This"] .inline .li {
+    font-weight: normal;
+    font-size: 15px
+}
+
+.collapse[title^="More Like This"] .sep {
+    display: none
+}
+
+.collapse[title^="AWL Collocations"] .er {
+    font-weight: normal
+}
+
+.collapse[title^="AWL Collocations"] .h3 {
+    border-bottom: 0
+}
+
+.collapse[title^="AWL Collocations"] .h3 .inline {
+    margin-bottom: 0;
+    font-size: 15px
+}
+
+.unbox.is-active .heading, .unbox.is-active pnc.heading {
+    margin-bottom: 12px
+}
+
+.unbox.is-active .heading:hover, .unbox.is-active pnc.heading:hover {
+    cursor: pointer
+}
+
+.unbox.is-active .heading:before, .unbox.is-active pnc.heading:before {
+    background-position: center top
+}
+
+.unbox.is-active .body, .unbox.is-active .heading + .def {
+    display: block
+}
+
+.snippet .collapse {
+    border-left-color: #A9222D;
+    background-color: transparent
+}
+
+.snippet .collapse .shcut {
+    border-bottom: none
+}
+
+.snippet .collapse .heading {
+    background-color: rgba(169, 34, 45, 0.1)
+}
+
+.snippet .collapse .heading:hover {
+    background-color: rgba(169, 34, 45, 0.2)
+}
+
+.snippet .collapse .heading:before {
+    background-image: url("_us-oxford-learners-dict-images-entry-icon-plus-minus-red.png")
+}
+
+.snippet .collapse .shcut.shcut {
+    margin-top: 12px
+}
+
+.snippet .collapse .sn-g {
+    margin-top: 0
+}
+
+.snippet .collapse .coll-g:before {
+    content: "\2022";
+    font-size: 20px;
+    padding-top: 2px;
+    margin-right: 6px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    line-height: 18px;
+    color: silver
+}
+
+.snippet .collapse .coll-gs .sep {
+    display: none
+}
+
+.peu-grammar-home .box {
+    background: url("_us-oxford-learners-dict-images-home-gu-ball.jpg") no-repeat 15px 15px white
+}
+
+.block {
+    display: block
+}
+
+.bold, .eb, .eb, .title_bold {
+    font-weight: bold
+}
+
+.boldItalic, .ebi {
+    font-style: italic;
+    font-weight: bold
+}
+
+.caption {
+    font-size: 12px;
+    padding-left: 20px
+}
+
+.commentary {
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal
+}
+
+.construct {
+    font-weight: bold
+}
+
+.constructGroup .construct {
+    font-weight: normal;
+    display: inline-block;
+    padding: 3px 8px;
+    background-color: #c6d9f9;
+    margin-bottom: .4em
+}
+
+.context {
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal
+}
+
+.dialogue {
+    font-style: italic
+}
+
+.dialogue .speaker {
+    font-style: normal
+}
+
+.equivalent {
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal
+}
+
+.example {
+    display: block;
+    font-style: italic;
+    padding-left: 12px;
+    text-indent: -12px
+}
+
+.example * {
+    text-indent: 0
+}
+
+.exampleGroup {
+    padding-left: 20px;
+    display: block;
+    position: relative
+}
+
+.exampleGroupSet {
+    display: block
+}
+
+.example_runon {
+    margin-left: 6px
+}
+
+.grammarEntry .h {
+    font-weight: bold
+}
+
+.hang {
+    min-width: 30px;
+    display: table-cell
+}
+
+.indent {
+    display: table-cell
+}
+
+.italic, .ei, .ei {
+    font-style: italic
+}
+
+.list_keyword {
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 8px
+}
+
+.locution {
+    display: inline
+}
+
+.locution:not(:last-child) {
+    margin-right: 6px
+}
+
+.note {
+    font-size: 0.8em;
+    font-family: "Merriweather", Georgia, sans-serif
+}
+
+.note .a {
+    font-size: 111.35%;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif
+}
+
+.notes {
+    display: block;
+    margin-top: 11px;
+    border-left: 4px solid silver;
+    padding-left: 8px
+}
+
+.notPertinent {
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal
+}
+
+.pertinent {
+    font-style: italic
+}
+
+.phons {
+    font-family: "Lucida Sans Unicode", "Lucida Grande";
+    font-style: normal
+}
+
+.roman {
+    font-style: normal
+}
+
+.smallCaps, .esc {
+    font-variant: small-caps;
+    font-variant: all-small-caps;
+    font-size: 1.2em;
+    text-transform: lowercase
+}
+
+.strikethrough, .estrike {
+    text-decoration: line-through
+}
+
+.strikethrough .eph, .estrike .eph {
+    text-decoration: line-through
+}
+
+.strikethrough .noStrike, .estrike .noStrike {
+    display: inline-block
+}
+
+.subtitle {
+    font-weight: normal
+}
+
+.subtitle .ebi {
+    font-weight: normal
+}
+
+.superSectionIntro {
+    display: block;
+    margin: 1em 0
+}
+
+.tabular {
+    display: block
+}
+
+.title {
+    color: #0d3880;
+    display: block;
+    font-weight: bold;
+    font-size: 1.2em
+}
+
+.title .subtitle .ei {
+    font-weight: normal
+}
+
+.underline {
+    text-decoration: underline
+}
+
+.vocabBox {
+    background-color: #c6d9f9;
+    padding: 3px 20px;
+    margin-bottom: .4em;
+    margin-top: .4em;
+    display: inline-block
+}
+
+.grammarEntry .wx-gs {
+    display: block;
+    border: 1px solid #0d3880;
+    padding: 8px;
+    margin-top: 14px
+}
+
+.grammarEntry .wx-gs .title {
+    padding-bottom: 8px;
+    font-weight: bold;
+    font-size: 18px
+}
+
+.grammarEntry .wx-gs .wx {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    display: block;
+    padding: 2px 0 2px 26px;
+    position: relative
+}
+
+.grammarEntry .wx-gs .wx:before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 16px;
+    position: absolute;
+    top: 6px;
+    left: 0;
+    background: url("_us-oxford-learners-dict-images-peu-wx-cross.png") no-repeat;
+    background-size: 12px 16px
+}
+
+.xh {
+    font-variant: small-caps
+}
+
+.xref {
+    color: #0d3880;
+    white-space: nowrap
+}
+
+.xref:before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    border-top: 0.35em solid transparent;
+    border-bottom: 0.35em solid transparent;
+    border-left: 0.7em solid #0d3880;
+    margin-right: 4px;
+    margin-left: 1px
+}
+
+.grammarEntry .xr-gs .xr-g {
+    display: block
+}
+
+.grammarEntry .Ref .xr-gs {
+    display: inline-block
+}
+
+.peu-btns {
+    padding-top: 10px;
+    display: block
+}
+
+.peu-btns:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.peu-btns a {
+    display: block;
+    position: relative;
+    line-height: 30px;
+    min-width: 90px;
+    padding: 0 12px;
+    background-color: #004aac;
+    color: white;
+    font-variant: normal;
+    text-transform: lowercase;
+    font-size: 12px;
+    font-weight: normal;
+    border-radius: 15px
+}
+
+.peu-btns a:before, .peu-btns a:after {
+    background: url("_us-oxford-learners-dict-images-peu-btn-arrows.svg") no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    width: 11px;
+    height: 30px
+}
+
+.peu-btns a:hover {
+    background-color: #00123c
+}
+
+.peu-btns .xr-g {
+    display: block
+}
+
+.peu-btns .xr-g:first-child a {
+    float: left
+}
+
+.peu-btns .xr-g:first-child a:before {
+    content: "";
+    margin-right: 6px
+}
+
+.peu-btns .xr-g:last-child a {
+    float: right;
+    text-align: right
+}
+
+.peu-btns .xr-g:last-child a:after {
+    content: "";
+    background-position: right top;
+    margin-left: 6px
+}
+
+.peu-btns .xr-g:last-child a:before {
+    content: none
+}
+
+.page-head, .grammarEntry > .title, .introduction > .title {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 1em
+}
+
+.grammarEntry {
+    display: block;
+    clear: both
+}
+
+.grammarEntry > .title {
+    line-height: 1.4em
+}
+
+.grammarEntry > .title[section="yes"] {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 1em
+}
+
+.grammarEntry > .title .hang {
+    padding-right: 20px
+}
+
+.grammarEntry > .title .indent .notPertinent {
+    font-weight: inherit
+}
+
+.grammarEntry .breadcrumb {
+    display: none
+}
+
+.grammarEntry > .breadcrumb {
+    font-size: .8em;
+    display: block;
+    margin-top: -10px;
+    margin-bottom: 4px
+}
+
+.grammarEntry > .breadcrumb:before {
+    content: "PEU";
+    font-weight: bold
+}
+
+.grammarEntry > .breadcrumb .l1 {
+    padding-left: 23px;
+    background: url("_us-oxford-learners-dict-images-peu-peu-mini-icon-1.png") no-repeat 4px center;
+    background-size: 14px 15px
+}
+
+.grammarEntry .xr-gs:before, .grammarEntry .institle, .grammarEntry .arl {
+    display: none
+}
+
+.grammarEntry .example_runon {
+    display: block;
+    margin-left: 0
+}
+
+.grammarEntry .exampleGroup {
+    padding-left: 12px
+}
+
+.grammarEntry .exampleGroup .hang {
+    left: 12px
+}
+
+.grammarEntry .exampleGroup .hang + .indent {
+    padding-left: 10px;
+    display: block
+}
+
+.grammarEntry .constructGroup {
+    padding-left: 12px
+}
+
+.author-name {
+    color: #4d4c4c;
+    font-size: 18px
+}
+
+.peu-home-logo {
+    display: inline-block;
+    margin: -10px 0 -10px
+}
+
+.peu-home-un-authorized {
+    padding-bottom: 20px
+}
+
+.peu-home-un-authorized h1 {
+    font-size: 28px;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    margin-top: 0;
+    margin-bottom: 8px
+}
+
+.peu-home-un-authorized h1:after {
+    content: "";
+    display: inline-block;
+    width: 26px;
+    height: 28px;
+    background: url("_us-oxford-learners-dict-images-peu-peu-logo-big.png") no-repeat right top;
+    background-size: 26px 28px;
+    margin-left: 8px;
+    margin-top: -4px;
+    vertical-align: middle
+}
+
+.peu-home-un-authorized #generaltext h2 {
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 24px
+}
+
+.peu-home-un-authorized #generaltext .open-close h2 {
+    color: #0d3880
+}
+
+.peu-home-un-authorized #generaltext .open-close h2:first-child {
+    margin-top: 0
+}
+
+.peu-home-un-authorized h3 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px
+}
+
+.peu-home-un-authorized h3 + h3 {
+    margin-top: -7px
+}
+
+.peu-home-un-authorized .peu-quote {
+    text-align: right;
+    font-size: 14px;
+    margin: 4px 0
+}
+
+.peu-home-authorized h3 {
+    padding-bottom: 0
+}
+
+.peu-sales-box {
+    border: 1px solid #8f0610;
+    padding: 12px 16px 10px;
+    margin-bottom: 20px;
+    margin-top: 20px
+}
+
+.peu-sales-box .bgtn-premium {
+    margin-top: 6px
+}
+
+.grammarEntry[type="interstitial"] .title {
+    color: #333;
+    font-weight: bold
+}
+
+.grammarEntry[type="interstitial"] > .title + .section {
+    margin-bottom: 8px
+}
+
+.grammarEntry[type="interstitial"] .section .title {
+    display: inline;
+    margin-top: 6px
+}
+
+.grammarEntry[type="interstitial"] .section {
+    margin-bottom: 6px
+}
+
+.grammarEntry[type="interstitial"] > .section {
+    margin-top: 24px
+}
+
+.grammarEntry[type="interstitial"] .subtitle {
+    font-weight: bold
+}
+
+.grammarEntry[type="interstitial"] .title .indent {
+    font-size: 15px;
+    font-weight: normal;
+    display: inline
+}
+
+.grammarEntry[type="interstitial"] .title + .block {
+    display: inline-block;
+    padding-left: 18px;
+    margin-top: 0
+}
+
+.grammarEntry[type="interstitial"] .title + .block .xr-gs {
+    display: inline-block;
+    margin-top: 0
+}
+
+.section {
+    display: block
+}
+
+.section > .title {
+    margin-top: 1em
+}
+
+.section > .section > .title {
+    font-size: 1em;
+    font-weight: normal
+}
+
+.grammarEntry > .section[section_num] > span:not(.title):not(.pnc), .grammarEntry > .section > .section[section_num] > span:not(.title):not(.pnc) {
+    margin-left: 30px
+}
+
+.grammarEntry > .section[section_num] + .notes, .grammarEntry > .section > .section[section_num] + .notes {
+    margin-top: 24px;
+    margin-left: 30px;
+    border-left: 12px solid silver
+}
+
+.section > .block, .section > .constructGroup, .section > .notes, .section > .lettered, .section > .bulleted, .section > .numbered {
+    display: block;
+    margin-top: .4em
+}
+
+.section .title {
+    display: table
+}
+
+.section .title .indent, .section .title .indent .ebi {
+    font-weight: normal
+}
+
+.exampleGroup .hang {
+    position: absolute;
+    left: 0
+}
+
+.example .pertinent {
+    font-weight: bold
+}
+
+.example .commentary .pertinent {
+    font-weight: normal
+}
+
+.example .commentary .example .pertinent {
+    font-weight: bold
+}
+
+.block .example, .commentary .example {
+    display: inline;
+    padding-left: 0;
+    text-indent: 0
+}
+
+.vocabBox .example {
+    display: inline
+}
+
+table span {
+    margin-left: 0 !important
+}
+
+table .exampleGroup, table .example {
+    padding-left: 0
+}
+
+table td {
+    padding: 0 1em 0 0;
+    vertical-align: top
+}
+
+table .block {
+    margin: 0
+}
+
+.frame_all_, .frame_none_, .frame_no_row_, .frame_never_, .frame__, .frame_none_0 {
+    margin-top: .8em;
+    margin-bottom: .4em
+}
+
+.frame_all_ th, .frame_none_ th, .frame_no_row_ th, .frame_never_ th, .frame__ th, .frame_none_0 th {
+    text-align: left;
+    font-weight: bold
+}
+
+.frame_all_ tr, .frame_no_row_ tr {
+    border: 1px black solid
+}
+
+.frame_all_ th, .frame_no_row_ th {
+    padding: 2px 6px
+}
+
+.frame_all_ td, .frame_no_row_ td {
+    padding: 2px 6px 2px 16px;
+    text-indent: -10px
+}
+
+.frame_no_row_ tr {
+    border-width: 0 1px
+}
+
+.frame_no_row_ tr:last-child {
+    border-bottom-width: 1px
+}
+
+.frame_no_row_ tr:first-child {
+    border-top-width: 1px;
+    border-bottom-width: 1px
+}
+
+.frame_none_ th, .frame_none_0 th, .frame__ th {
+    text-align: left;
+    padding-right: 15px
+}
+
+.plain {
+    display: block
+}
+
+.plain .indent {
+    display: block
+}
+
+.plain .exampleGroup {
+    padding-left: 20px
+}
+
+.plain .example {
+    padding-left: 0
+}
+
+.plain .block {
+    margin: 0
+}
+
+.bulleted, .lettered, .numbered {
+    padding-left: 20px;
+    position: relative
+}
+
+.bulleted .li:before, .lettered .li:before, .numbered .li:before {
+    position: absolute;
+    left: 0;
+    font-weight: bold
+}
+
+.bulleted .li:before {
+    content: "\2022"
+}
+
+.lettered {
+    counter-reset: letter-counter
+}
+
+.lettered .li:before {
+    content: counter(letter-counter, lower-alpha);
+    counter-increment: letter-counter
+}
+
+.numbered {
+    counter-reset: number-counter
+}
+
+.numbered .li:before {
+    content: counter(number-counter);
+    counter-increment: number-counter
+}
+
+.numbered .bulleted {
+    display: block
+}
+
+.numbered .bulleted .li:before {
+    content: "\2022" !important;
+    counter-increment: none
+}
+
+@media screen and (min-width: 261px) and (max-width: 761px) {
+    .grammarEntry > .breadcrumb {
+        margin-top: 0
+    }
+}
+
+@media screen and (min-width: 762px) and (max-width: 928px) {
+    .grammarEntry > .breadcrumb {
+        margin-top: -6px
+    }
+}
+
+.peu-contents-full {
+    margin-bottom: 10px
+}
+
+.peu-contents-full li a {
+    padding: 7px 0 7px 25px;
+    line-height: 22px
+}
+
+.peu-contents-full ul > li > div > a {
+    color: #333
+}
+
+.peu-contents-full ul ul > li > div > a {
+    color: #004aac;
+    padding: 4px 0 4px 25px
+}
+
+.peu-contents-full ul ul ul > li > div > a {
+    color: #333;
+    padding: 4px 0 4px 25px
+}
+
+.peu-contents-full .section .section[subsection="1"]:not(:first-child) .title:before {
+    content: "- "
+}
+
+#rightcolumn .toc_header {
+    border-bottom: 1px solid #cccccc
+}
+
+#rightcolumn .toc_header h4 {
+    padding-left: 26px;
+    font-size: 15px
+}
+
+#rightcolumn .toc_content {
+    padding-right: 8px
+}
+
+#rightcolumn .toc_content > a {
+    margin-top: 8px;
+    display: inline-block
+}
+
+#rightcolumn .relatedBlock ul ul div a {
+    padding: 4px;
+    margin-left: 16px;
+    color: #004aac
+}
+
+#rightcolumn .relatedBlock ul ul .icon-plus, #rightcolumn .relatedBlock ul ul .icon-minus {
+    display: none
+}
+
+#rightcolumn .relatedBlock ul ul ul[style] {
+    display: none !important
+}
+
+.grammarEntry .pron-gs {
+    border: none;
+    padding: 0 4px;
+    vertical-align: top;
+    margin-top: 0;
+    display: inline-block
+}
+
+.grammarEntry .pron-gs .sound {
+    display: block
+}
+
+.lang-study-page h3, .peu-introduction-page h3 {
+    margin: 14px 0 0
+}
+
+.peu-link-nav, #browse-letters {
+    margin-top: 16px
+}
+
+.peu-link-nav:after, #browse-letters:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.peu-link-nav a, #browse-letters a {
+    display: block;
+    float: left;
+    padding: 0 8px;
+    min-width: 34px;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    border: 2px solid #cccccc;
+    border-radius: 8px
+}
+
+.peu-link-nav a:hover, #browse-letters a:hover {
+    background-color: #ebebeb;
+    text-decoration: none;
+    color: black
+}
+
+.definition-wrap {
+    margin-left: 22px;
+    text-indent: -22px;
+    margin-bottom: 8px
+}
+
+.phon-table td {
+    height: 30px
+}
+
+.phon-table td:first-child {
+    width: 35px
+}
+
+.story-behind-peu .float-right {
+    float: right;
+    margin: 5px 0 10px 10px
+}
+
+.story-behind-peu .float-left {
+    float: left;
+    margin: 5px 10px 10px 0
+}
+
+.story-behind-peu .float-right, .story-behind-peu .float-left {
+    max-width: 50%;
+    height: auto
+}
+
+.entry-unauthorised .restrictedLock {
+    color: #333;
+    margin-bottom: 18px
+}
+
+.entry-unauthorised .restrictedImg img {
+    width: 14px
+}
+
+.entry-unauthorised .restrictedLinks table {
+    margin-bottom: 20px;
+    position: relative
+}
+
+.entry-unauthorised .restrictedLinks td {
+    display: block;
+    float: left;
+    line-height: 30px
+}
+
+.entry-unauthorised .restrictedLinks td:first-child {
+    font-size: 18px;
+    font-weight: bold
+}
+
+.introduction > .title {
+    margin-bottom: 0
+}
+
+.introduction > .title .hang {
+    display: inline-block;
+    padding-right: 20px;
+    font-weight: normal
+}
+
+.introduction > .title .indent {
+    display: inline-block;
+    font-weight: bold
+}
+
+.introduction > .title .indent .ei, .introduction > .title .indent .notPertinent {
+    font-weight: bold
+}
+
+.superSectionIntro, .title_contents {
+    text-transform: uppercase;
+    color: #333;
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: block;
+    font-weight: normal
+}
+
+#simple-present-forms__16 tr, #passive-structures-and-verb-forms__23 tr {
+    border-width: 0 1px 0 1px
+}
+
+#simple-present-forms__16 tr:first-child, #passive-structures-and-verb-forms__23 tr:first-child {
+    border-width: 1px
+}
+
+#simple-present-forms__16 tr:last-child, #passive-structures-and-verb-forms__23 tr:last-child {
+    border-width: 0 1px 1px 1px
+}
+
+#abbreviations__164 td, #prefixes-and-suffixes__997 td, #prefixes-and-suffixes__1024 td, #prefixes-and-suffixes__798 td, #special-rules-and-exceptions__724 td {
+    padding-left: 10px;
+    text-indent: -10px
+}
+
+#numbers_1__853 {
+    margin-left: 15px
+}
+
+#numbers_1__803 td > span {
+    display: block;
+    padding-left: 10px;
+    text-indent: -10px
+}
+
+#numbers_1__803 td:first-child {
+    white-space: nowrap
+}
+
+#headlines__203 .esc {
+    display: block;
+    padding-left: 15px
+}
+
+#special-rules-and-exceptions__724 td .ei:nth-child(2), #special-rules-and-exceptions__724 td .ei:nth-child(3) {
+    display: block;
+    padding-left: 10px
+}
+
+#special-rules-and-exceptions__724 .example_runon {
+    padding-left: 10px
+}
+
+#numbers_1__846 td:first-child {
+    white-space: nowrap
+}
+
+#spelling-of-plurals__30 tr:nth-child(2) td .ebi, #spelling-of-plurals__128 tr:nth-child(2) td .ebi, #if-introduction__45 tr:nth-child(2) td .ebi, #if-introduction__63 tr:nth-child(2) td .ebi, #if-introduction__81 tr:nth-child(2) td .ebi {
+    padding: 3px 8px;
+    background-color: #c6d9f9
+}
+
+#if-introduction__45 tr:nth-child(2) td, #if-introduction__63 tr:nth-child(2) td, #if-introduction__81 tr:nth-child(2) td {
+    text-align: left
+}
+
+#if-introduction__45 tr:nth-child(2) td .ebi, #if-introduction__45 tr:nth-child(2) td .eb, #if-introduction__63 tr:nth-child(2) td .ebi, #if-introduction__63 tr:nth-child(2) td .eb, #if-introduction__81 tr:nth-child(2) td .ebi, #if-introduction__81 tr:nth-child(2) td .eb {
+    font-weight: normal
+}
+
+#if-introduction__45 td:first-child, #if-introduction__63 td:first-child, #if-introduction__81 td:first-child {
+    min-width: 170px
+}
+
+@media screen and (max-width: 761px) {
+    #active-verb-tenses__93.frame_all_, #simple-past_1__193.frame_all_, #prefixes-and-suffixes__19.frame_all_, #prefixes-and-suffixes__573.frame_all_, #prefixes-and-suffixes__827.frame_all_, #simple-present-forms__16.frame_all_, #simple-past_1__18.frame_all_, #passive-structures-and-verb-forms__23.frame_all_, #comparative-and-superlative-adjectives__57.frame_all_, #nationalities-countries-and-regions__30.frame_all_6, #simple-present-forms__16.frame_no_row_, #passive-structures-and-verb-forms__23.frame_no_row_, #comparative-and-superlative-adjectives__57.frame_no_row_, #nationalities-countries-and-regions__92.frame_no_row_, #nationalities-countries-and-regions__194.frame_no_row_, #american-and-british-english__24, #american-and-british-english__212, #active-verb-tenses__116 {
+        display: block;
+        border: none;
+        border: 1px solid grey
+    }
+
+    #active-verb-tenses__93.frame_all_ tbody, #active-verb-tenses__93.frame_all_ tr, #active-verb-tenses__93.frame_all_ td, #simple-past_1__193.frame_all_ tbody, #simple-past_1__193.frame_all_ tr, #simple-past_1__193.frame_all_ td, #prefixes-and-suffixes__19.frame_all_ tbody, #prefixes-and-suffixes__19.frame_all_ tr, #prefixes-and-suffixes__19.frame_all_ td, #prefixes-and-suffixes__573.frame_all_ tbody, #prefixes-and-suffixes__573.frame_all_ tr, #prefixes-and-suffixes__573.frame_all_ td, #prefixes-and-suffixes__827.frame_all_ tbody, #prefixes-and-suffixes__827.frame_all_ tr, #prefixes-and-suffixes__827.frame_all_ td, #simple-present-forms__16.frame_all_ tbody, #simple-present-forms__16.frame_all_ tr, #simple-present-forms__16.frame_all_ td, #simple-past_1__18.frame_all_ tbody, #simple-past_1__18.frame_all_ tr, #simple-past_1__18.frame_all_ td, #passive-structures-and-verb-forms__23.frame_all_ tbody, #passive-structures-and-verb-forms__23.frame_all_ tr, #passive-structures-and-verb-forms__23.frame_all_ td, #comparative-and-superlative-adjectives__57.frame_all_ tbody, #comparative-and-superlative-adjectives__57.frame_all_ tr, #comparative-and-superlative-adjectives__57.frame_all_ td, #nationalities-countries-and-regions__30.frame_all_6 tbody, #nationalities-countries-and-regions__30.frame_all_6 tr, #nationalities-countries-and-regions__30.frame_all_6 td, #simple-present-forms__16.frame_no_row_ tbody, #simple-present-forms__16.frame_no_row_ tr, #simple-present-forms__16.frame_no_row_ td, #passive-structures-and-verb-forms__23.frame_no_row_ tbody, #passive-structures-and-verb-forms__23.frame_no_row_ tr, #passive-structures-and-verb-forms__23.frame_no_row_ td, #comparative-and-superlative-adjectives__57.frame_no_row_ tbody, #comparative-and-superlative-adjectives__57.frame_no_row_ tr, #comparative-and-superlative-adjectives__57.frame_no_row_ td, #nationalities-countries-and-regions__92.frame_no_row_ tbody, #nationalities-countries-and-regions__92.frame_no_row_ tr, #nationalities-countries-and-regions__92.frame_no_row_ td, #nationalities-countries-and-regions__194.frame_no_row_ tbody, #nationalities-countries-and-regions__194.frame_no_row_ tr, #nationalities-countries-and-regions__194.frame_no_row_ td, #american-and-british-english__24 tbody, #american-and-british-english__24 tr, #american-and-british-english__24 td, #american-and-british-english__212 tbody, #american-and-british-english__212 tr, #american-and-british-english__212 td, #active-verb-tenses__116 tbody, #active-verb-tenses__116 tr, #active-verb-tenses__116 td {
+        display: block;
+        border: none
+    }
+
+    #active-verb-tenses__93.frame_all_ tr, #simple-past_1__193.frame_all_ tr, #prefixes-and-suffixes__19.frame_all_ tr, #prefixes-and-suffixes__573.frame_all_ tr, #prefixes-and-suffixes__827.frame_all_ tr, #simple-present-forms__16.frame_all_ tr, #simple-past_1__18.frame_all_ tr, #passive-structures-and-verb-forms__23.frame_all_ tr, #comparative-and-superlative-adjectives__57.frame_all_ tr, #nationalities-countries-and-regions__30.frame_all_6 tr, #simple-present-forms__16.frame_no_row_ tr, #passive-structures-and-verb-forms__23.frame_no_row_ tr, #comparative-and-superlative-adjectives__57.frame_no_row_ tr, #nationalities-countries-and-regions__92.frame_no_row_ tr, #nationalities-countries-and-regions__194.frame_no_row_ tr, #american-and-british-english__24 tr, #american-and-british-english__212 tr, #active-verb-tenses__116 tr {
+        border-bottom: 1px solid grey;
+        padding-bottom: 4px
+    }
+
+    #active-verb-tenses__93.frame_all_ tr:first-child, #simple-past_1__193.frame_all_ tr:first-child, #prefixes-and-suffixes__19.frame_all_ tr:first-child, #prefixes-and-suffixes__573.frame_all_ tr:first-child, #prefixes-and-suffixes__827.frame_all_ tr:first-child, #simple-present-forms__16.frame_all_ tr:first-child, #simple-past_1__18.frame_all_ tr:first-child, #passive-structures-and-verb-forms__23.frame_all_ tr:first-child, #comparative-and-superlative-adjectives__57.frame_all_ tr:first-child, #nationalities-countries-and-regions__30.frame_all_6 tr:first-child, #simple-present-forms__16.frame_no_row_ tr:first-child, #passive-structures-and-verb-forms__23.frame_no_row_ tr:first-child, #comparative-and-superlative-adjectives__57.frame_no_row_ tr:first-child, #nationalities-countries-and-regions__92.frame_no_row_ tr:first-child, #nationalities-countries-and-regions__194.frame_no_row_ tr:first-child, #american-and-british-english__24 tr:first-child, #american-and-british-english__212 tr:first-child, #active-verb-tenses__116 tr:first-child {
+        display: none
+    }
+
+    #active-verb-tenses__93.frame_all_ tr:last-child, #simple-past_1__193.frame_all_ tr:last-child, #prefixes-and-suffixes__19.frame_all_ tr:last-child, #prefixes-and-suffixes__573.frame_all_ tr:last-child, #prefixes-and-suffixes__827.frame_all_ tr:last-child, #simple-present-forms__16.frame_all_ tr:last-child, #simple-past_1__18.frame_all_ tr:last-child, #passive-structures-and-verb-forms__23.frame_all_ tr:last-child, #comparative-and-superlative-adjectives__57.frame_all_ tr:last-child, #nationalities-countries-and-regions__30.frame_all_6 tr:last-child, #simple-present-forms__16.frame_no_row_ tr:last-child, #passive-structures-and-verb-forms__23.frame_no_row_ tr:last-child, #comparative-and-superlative-adjectives__57.frame_no_row_ tr:last-child, #nationalities-countries-and-regions__92.frame_no_row_ tr:last-child, #nationalities-countries-and-regions__194.frame_no_row_ tr:last-child, #american-and-british-english__24 tr:last-child, #american-and-british-english__212 tr:last-child, #active-verb-tenses__116 tr:last-child {
+        border-bottom: none
+    }
+
+    #active-verb-tenses__93.frame_all_ td:before, #simple-past_1__193.frame_all_ td:before, #prefixes-and-suffixes__19.frame_all_ td:before, #prefixes-and-suffixes__573.frame_all_ td:before, #prefixes-and-suffixes__827.frame_all_ td:before, #simple-present-forms__16.frame_all_ td:before, #simple-past_1__18.frame_all_ td:before, #passive-structures-and-verb-forms__23.frame_all_ td:before, #comparative-and-superlative-adjectives__57.frame_all_ td:before, #nationalities-countries-and-regions__30.frame_all_6 td:before, #simple-present-forms__16.frame_no_row_ td:before, #passive-structures-and-verb-forms__23.frame_no_row_ td:before, #comparative-and-superlative-adjectives__57.frame_no_row_ td:before, #nationalities-countries-and-regions__92.frame_no_row_ td:before, #nationalities-countries-and-regions__194.frame_no_row_ td:before, #american-and-british-english__24 td:before, #american-and-british-english__212 td:before, #active-verb-tenses__116 td:before {
+        display: block;
+        font-weight: bold;
+        padding-top: 4px
+    }
+
+    #active-verb-tenses__93 td:nth-child(1):before, #passive-structures-and-verb-forms__23 td:nth-child(1):before, #passive-structures-and-verb-forms__23 td:nth-child(1):before, #active-verb-tenses__116 td:nth-child(1):before {
+        content: "NAME"
+    }
+
+    #active-verb-tenses__93 td:nth-child(2):before, #passive-structures-and-verb-forms__23 td:nth-child(2):before, #passive-structures-and-verb-forms__23 td:nth-child(2):before, #active-verb-tenses__116 td:nth-child(2):before {
+        content: "CONSTRUCTION"
+    }
+
+    #active-verb-tenses__93 td:nth-child(3):before, #passive-structures-and-verb-forms__23 td:nth-child(3):before, #passive-structures-and-verb-forms__23 td:nth-child(3):before, #active-verb-tenses__116 td:nth-child(3):before {
+        content: "EXAMPLE"
+    }
+
+    #active-verb-tenses__93 td:nth-child(4):before, #passive-structures-and-verb-forms__23 td:nth-child(4):before, #passive-structures-and-verb-forms__23 td:nth-child(4):before, #active-verb-tenses__116 td:nth-child(4):before {
+        content: "TYPICAL USE"
+    }
+
+    #prefixes-and-suffixes__19 td:nth-child(1):before, #prefixes-and-suffixes__573 td:nth-child(1):before, #prefixes-and-suffixes__827 td:nth-child(1):before {
+        content: "prefix"
+    }
+
+    #prefixes-and-suffixes__19 td:nth-child(2):before, #prefixes-and-suffixes__573 td:nth-child(2):before, #prefixes-and-suffixes__827 td:nth-child(2):before {
+        content: "mainly added to"
+    }
+
+    #prefixes-and-suffixes__19 td:nth-child(3):before, #prefixes-and-suffixes__573 td:nth-child(3):before, #prefixes-and-suffixes__827 td:nth-child(3):before {
+        content: "usual meaning"
+    }
+
+    #prefixes-and-suffixes__19 td:nth-child(4):before, #prefixes-and-suffixes__573 td:nth-child(4):before, #prefixes-and-suffixes__827 td:nth-child(4):before {
+        content: "examples"
+    }
+
+    #simple-present-forms__16 td:nth-child(1):before {
+        content: "Affirmative"
+    }
+
+    #simple-present-forms__16 td:nth-child(2):before {
+        content: "Question"
+    }
+
+    #simple-present-forms__16 td:nth-child(3):before {
+        content: "Negative"
+    }
+
+    #comparative-and-superlative-adjectives__57 td:nth-child(1):before {
+        content: "Adjective"
+    }
+
+    #comparative-and-superlative-adjectives__57 td:nth-child(2):before {
+        content: "Comparative"
+    }
+
+    #comparative-and-superlative-adjectives__57 td:nth-child(3):before {
+        content: "Superlative"
+    }
+
+    #nationalities-countries-and-regions__92 td:nth-child(1):before, #nationalities-countries-and-regions__194 td:nth-child(1):before {
+        content: "Country/region"
+    }
+
+    #nationalities-countries-and-regions__92 td:nth-child(2):before, #nationalities-countries-and-regions__194 td:nth-child(2):before {
+        content: "Adjective"
+    }
+
+    #nationalities-countries-and-regions__92 td:nth-child(3):before, #nationalities-countries-and-regions__194 td:nth-child(3):before {
+        content: "Person"
+    }
+
+    #nationalities-countries-and-regions__92 td:nth-child(4):before, #nationalities-countries-and-regions__194 td:nth-child(4):before {
+        content: "Population"
+    }
+
+    #american-and-british-english__212 td:nth-child(1):before, #american-and-british-english__24 td:nth-child(1):before {
+        content: "American English"
+    }
+
+    #american-and-british-english__212 td:nth-child(2):before, #american-and-british-english__24 td:nth-child(2):before {
+        content: "British English"
+    }
+
+    .frame_none_ {
+        display: block;
+        border: none
+    }
+
+    .frame_none_ tbody {
+        display: block
+    }
+
+    .frame_none_ tr {
+        display: block;
+        border: none;
+        padding-bottom: 4px
+    }
+
+    .frame_none_ td, .frame_none_ th {
+        display: inline;
+        padding: 0 4px 0 0
+    }
+
+    .frame_none_ td:not(:first-child):before, .frame_none_ th:not(:first-child):before {
+        content: "| ";
+        padding-right: 4px
+    }
+
+    .frame_none_ .block {
+        display: inline;
+        padding-right: 4px
+    }
+}
+
+#formal-and-informal-vocabulary__9 .exampleGroup .context {
+    width: 150px;
+    display: inline-block
+}
+
+@media screen and (max-width: 761px) {
+    #formal-and-informal-vocabulary__9 .exampleGroup .context {
+        display: inline
+    }
+}
+
+#capital-letters_1__9 {
+    counter-reset: letter-counter;
+    position: relative
+}
+
+#capital-letters_1__9 .section:before {
+    content: counter(letter-counter, lower-alpha);
+    counter-increment: letter-counter;
+    position: absolute;
+    left: 0;
+    font-weight: bold
+}
+
+#spelling-and-pronunciation__134 .example {
+    display: inline-block
+}
+
+#comparative-and-superlative-adjectives__311, #comparative-and-superlative-adjectives__340, #american-and-british-english__212, #american-and-british-english__24 {
+    border: none
+}
+
+#comparative-and-superlative-adjectives__311 tr, #comparative-and-superlative-adjectives__340 tr, #american-and-british-english__212 tr, #american-and-british-english__24 tr {
+    border: none
+}
+
+#comparative-and-superlative-adjectives__311 td, #comparative-and-superlative-adjectives__340 td, #american-and-british-english__212 td, #american-and-british-english__24 td {
+    padding-left: 12px;
+    text-indent: -12px
+}
+
+#prepositions-before-particular-words-and-expressions__9 .plain {
+    margin-top: 16px
+}
+
+#prepositions-before-particular-words-and-expressions__9 .plain .indent {
+    margin-top: 8px
+}
+
+#prepositions-after-particular-words-and-expressions__9 .plain .indent {
+    margin-top: 8px
+}
+
+#spelling-and-pronunciation__1176 .sound {
+    display: inline-block
+}
+
+.swb-home-logo {
+    display: inline-block;
+    margin: -10px 0 -10px
+}
+
+h2 .oxford3000 {
+    top: 0
+}
+
+.unbox .p {
+    display: block
+}
+
+.unbox .p + .p {
+    margin-top: 18px
+}
+
+.trans-page .v_alt {
+    font-weight: bold
+}
+
+.trans-page .prefix_adv, .trans-page .ds, .trans-page .dtxt {
+    font-style: italic
+}
+
+.trans-page .x-g:before {
+    content: "\2022";
+    top: 1px;
+    left: -13px;
+    font-size: 22px;
+    color: #008900;
+    background-image: none
+}
+
+.trans-page .x {
+    font-family: "Open Sans", Arial, sans-serif
+}
+
+.trans-page .tx {
+    display: block;
+    color: #008900;
+    font-size: 14px
+}
+
+.trans-page .unbox, .trans-page .bf-gs {
+    border: 1px solid rgba(199, 110, 6, 0.4);
+    border-radius: 10px 10px 0 0;
+    display: block;
+    margin: 18px 0 18px 0;
+    overflow: hidden;
+    padding: 9px 18px
+}
+
+.trans-page .unbox {
+    border-color: #333
+}
+
+.trans-page .unbox .h1 {
+    font-size: 20px;
+    padding: 10px 0 6px;
+    display: block
+}
+
+.trans-page .top-g .unbox {
+    border: none;
+    display: inline;
+    padding: 0;
+    margin: 0
+}
+
+.trans-page .idm-gs {
+    border-color: #C76E06
+}
+
+.trans-page .idm-gs > .unbox {
+    margin-left: 18px;
+    margin-right: 18px
+}
+
+.trans-page .idm-gs > .prefix {
+    display: block;
+    font-size: 18px;
+    padding: 12px 18px 0 18px;
+    color: #C76E06
+}
+
+.trans-page .bf-gs .top-container {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    background-color: transparent;
+    padding: 0
+}
+
+.trans-page .bf-gs .top-container .top-g .clear {
+    display: none
+}
+
+.trans-page .bf-gs .prefix {
+    color: #C76E06
+}
+
+.schulwoerterbuch_German-English .clear {
+    display: none
+}
+
+.audio .icon-audio {
+    background-repeat: no-repeat;
+    background-position: left top !important;
+    background-size: 100%;
+    width: 24px;
+    height: 24px;
+    margin-right: 4px;
+    display: inline-block
+}
+
+.audio .icon-audio:hover {
+    background-position: left bottom !important
+}
+
+.audio .pron-uk {
+    background-image: url("_us-oxford-learners-dict-images-documents-icon-audio-bre.png")
+}
+
+.audio .pron-us {
+    background-image: url("_us-oxford-learners-dict-images-documents-icon-audio-name.png")
+}
+
+.shcut-red, .snippet .collapse .shcut, .ocoll .shcut, .collapse[title="Collocations"] .shcut, .collapse[title="All Collocations"] .shcut {
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: none;
+    margin-top: 30px;
+    color: #A9222D
+}
+
+.ocoll .top-container {
+    background-color: transparent;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 0;
+    clear: none
+}
+
+.ocoll .num {
+    display: inline-block;
+    width: 20px
+}
+
+.ocoll .colldef {
+    font-size: 16px
+}
+
+.ocoll .pos-g + .colldef {
+    display: block
+}
+
+.ocoll .subentry-g .top-container, .ocoll .subentry-g .top-g {
+    display: inline
+}
+
+.ocoll .subentry-g .top-g .clear {
+    display: none
+}
+
+.ocoll .subentry-g {
+    display: block
+}
+
+.ocoll .subentry-g + .subentry-g {
+    margin-top: 30px
+}
+
+.ocoll .top-container + .sn-gs > .shcut-g:first-child .shcut {
+    margin-top: 9px
+}
+
+.ocoll .top-container .v-gs {
+    display: inline-block
+}
+
+.ocoll .shcut-g {
+    padding-left: 20px;
+    display: block
+}
+
+.ocoll .coll_un:before {
+    content: "("
+}
+
+.ocoll .coll_un:after {
+    content: ")"
+}
+
+.ocoll .coll_un[un="note"] {
+    font-weight: normal
+}
+
+.ocoll .sn-g {
+    padding-left: 18px;
+    margin-top: 8px;
+    margin-bottom: 8px
+}
+
+.ocoll .sn-g.sn-g:before {
+    content: "\2022";
+    color: silver;
+    font-size: 22px;
+    padding-right: 6px;
+    position: absolute;
+    text-align: right;
+    left: -8px;
+    width: 24px
+}
+
+.ocoll .coll-gs:not(.x-gs) {
+    font-weight: bold
+}
+
+.ocoll .x-gs {
+    margin-top: 2px;
+    font-weight: normal
+}
+
+.ocoll .x-gs .x-g {
+    margin-left: 0;
+    margin-top: 0
+}
+
+.ocoll .x-gs .x-g:before {
+    content: none
+}
+
+.ocoll .xr-gs {
+    padding-left: 21px
+}
+
+.ocoll .collapse .coll-gs {
+    padding-left: 20px;
+    display: block;
+    position: relative
+}
+
+.ocoll .collapse .coll-g:before {
+    content: "\2022";
+    color: silver;
+    font-size: 16px;
+    padding-right: 6px;
+    position: absolute;
+    text-align: right;
+    left: -8px;
+    width: 24px
+}
+
+.ocoll .collapse .x-g {
+    display: block
+}
+
+.col-home-logo {
+    display: inline-block;
+    margin: -10px 0 -10px;
+    width: 44px;
+    height: 44px
+}
+
+.eul {
+    text-decoration: underline
+}
+
+.collapse[title="Collocations"] .shcut, .collapse[title="All Collocations"] .shcut {
+    color: #333;
+    margin-top: 12px
+}
+
+.collapse[title="Collocations"] .sn-g, .collapse[title="All Collocations"] .sn-g {
+    margin-top: 0
+}
+
+.collapse[title="Collocations"] .colsep, .collapse[title="All Collocations"] .colsep {
+    color: silver
+}
+
+.collapse[title="Collocations"] .x-g, .collapse[title="All Collocations"] .x-g {
+    display: block
+}
+
+.collapse[title="Collocations"] .x-g:first-of-type:before, .collapse[title="All Collocations"] .x-g:first-of-type:before {
+    content: "";
+    left: -3px;
+    margin-left: -2px;
+    margin-right: 1px;
+    position: relative;
+    display: inline-block;
+    top: -2px;
+    width: 6px;
+    height: 6px;
+    background-image: url("_us-oxford-learners-dict-images-entry-entry-bullet.png");
+    background-size: 6px auto
+}
+
+.prefix + .Ref {
+    display: inline;
+    margin: 0
+}
